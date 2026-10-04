@@ -1,0 +1,142 @@
+{
+    "APPLE": {
+        "class_id": 0,
+        "accuracy": 0.9090909090909091,
+        "accuracy_percent": 90.9090909090909,
+        "correct": 10,
+        "total": 11
+    },
+    "DOG1": {
+        "class_id": 1,
+        "accuracy": 0.6470588235294118,
+        "accuracy_percent": 64.70588235294117,
+        "correct": 11,
+        "total": 17
+    },
+    "BREAKFAST1": {
+        "class_id": 2,
+        "accuracy": 0.26666666666666666,
+        "accuracy_percent": 26.666666666666668,
+        "correct": 4,
+        "total": 15
+    },
+    "DARK1": {
+        "class_id": 3,
+        "accuracy": 0.9333333333333333,
+        "accuracy_percent": 93.33333333333333,
+        "correct": 14,
+        "total": 15
+    },
+    "DEAF1": {
+        "class_id": 4,
+        "accuracy": 0.8666666666666667,
+        "accuracy_percent": 86.66666666666667,
+        "correct": 13,
+        "total": 15
+    },
+    "PARTY1": {
+        "class_id": 5,
+        "accuracy": 0.8,
+        "accuracy_percent": 80.0,
+        "correct": 12,
+        "total": 15
+    },
+    "DEVELOP1": {
+        "class_id": 6,
+        "accuracy": 0.5714285714285714,
+        "accuracy_percent": 57.14285714285714,
+        "correct": 8,
+        "total": 14
+    },
+    "BEE1": {
+        "class_id": 7,
+        "accuracy": 0.7857142857142857,
+        "accuracy_percent": 78.57142857142857,
+        "correct": 11,
+        "total": 14
+    },
+    "FINE1": {
+        "class_id": 8,
+        "accuracy": 0.75,
+        "accuracy_percent": 75.0,
+        "correct": 12,
+        "total": 16
+    },
+    "CHRISTMAS1": {
+        "class_id": 9,
+        "accuracy": 0.47058823529411764,
+        "accuracy_percent": 47.05882352941176,
+        "correct": 8,
+        "total": 17
+    },
+    "HALLOWEEN1": {
+        "class_id": 10,
+        "accuracy": 1.0,
+        "accuracy_percent": 100.0,
+        "correct": 14,
+        "total": 14
+    },
+    "RIVER1": {
+        "class_id": 11,
+        "accuracy": 0.4,
+        "accuracy_percent": 40.0,
+        "correct": 6,
+        "total": 15
+    },
+    "LUNCH1": {
+        "class_id": 12,
+        "accuracy": 0.5,
+        "accuracy_percent": 50.0,
+        "correct": 7,
+        "total": 14
+    },
+    "HOSPITAL1": {
+        "class_id": 13,
+        "accuracy": 0.8235294117647058,
+        "accuracy_percent": 82.35294117647058,
+        "correct": 14,
+        "total": 17
+    },
+    "MEAT1": {
+        "class_id": 14,
+        "accuracy": 0.6,
+        "accuracy_percent": 60.0,
+        "correct": 6,
+        "total": 10
+    },
+    "DINNER1": {
+        "class_id": 15,
+        "accuracy": 0.3333333333333333,
+        "accuracy_percent": 33.33333333333333,
+        "correct": 5,
+        "total": 15
+    },
+    "EAT1": {
+        "class_id": 16,
+        "accuracy": 0.8235294117647058,
+        "accuracy_percent": 82.35294117647058,
+        "correct": 14,
+        "total": 17
+    },
+    "MOVIE1": {
+        "class_id": 17,
+        "accuracy": 0.5882352941176471,
+        "accuracy_percent": 58.82352941176471,
+        "correct": 10,
+        "total": 17
+    },
+    "SINK": {
+        "class_id": 18,
+        "accuracy": 0.5,
+        "accuracy_percent": 50.0,
+        "correct": 5,
+        "total": 10
+    },
+    "BASKETBALL1": {
+        "class_id": 19,
+        "accuracy": 0.35,
+        "accuracy_percent": 35.0,
+        "correct": 7,
+        "total": 20
+    }
+}

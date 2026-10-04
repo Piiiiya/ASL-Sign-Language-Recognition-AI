@@ -1,0 +1,85 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Large datasets
+data/raw/
+data/processed/
+data/**/train/
+data/**/val/
+data/**/test/
+
+# Trained models
+models/*.keras
+models/*.h5
+models/*.pt
+models/*.pth
+models/*.task
+
+# Temporary and generated files
+*.tmp
+*.log
+temp/
+tmp/
+cache/
+
+# Video and large media files
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Operating system
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+
+# Generated evaluation images and temporary videos
+outputs/confusion_samples/
+outputs/movie_frames/
+outputs/landmark_visualization/
+outputs/uploaded_videos/
+outputs/uploaded_video.mp4
+outputs/webcam_test.jpg
+
+# Generated binary evaluation arrays
+outputs/*.npy
+
+# Local dataset and model artifacts
+data/raw/
+data/processed/
+models/
+
+# Large archives
+*.zip
+*.7z
+*.rar
+
+
+# Dataset demographic information
+data/metadata/Demographics/demographics.csv
+
+# Dataset sample images and contact sheets
+outputs/*contact_sheet*.jpg
+

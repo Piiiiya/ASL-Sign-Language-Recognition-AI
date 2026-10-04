@@ -1,0 +1,26 @@
+              precision    recall  f1-score   support
+
+       APPLE       1.00      0.82      0.90        11
+        DOG1       0.87      0.76      0.81        17
+  BREAKFAST1       0.75      0.43      0.55        14
+       DARK1       0.81      0.87      0.84        15
+       DEAF1       0.72      0.87      0.79        15
+      PARTY1       0.94      1.00      0.97        15
+    DEVELOP1       0.91      0.71      0.80        14
+        BEE1       0.63      0.86      0.73        14
+       FINE1       0.82      0.88      0.85        16
+  CHRISTMAS1       0.69      0.65      0.67        17
+  HALLOWEEN1       0.81      0.93      0.87        14
+      RIVER1       0.60      0.60      0.60        15
+      LUNCH1       0.67      0.57      0.62        14
+   HOSPITAL1       0.82      0.82      0.82        17
+       MEAT1       0.58      0.70      0.64        10
+     DINNER1       0.80      0.53      0.64        15
+        EAT1       0.73      0.94      0.82        17
+      MOVIE1       0.75      0.56      0.64        16
+        SINK       0.43      0.60      0.50        10
+ BASKETBALL1       0.81      0.85      0.83        20
+
+    accuracy                           0.75       296
+   macro avg       0.76      0.75      0.74       296
+weighted avg       0.76      0.75      0.75       296

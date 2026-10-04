@@ -1,0 +1,102 @@
+{
+    "APPLE": {
+        "correct": 9,
+        "total": 11,
+        "accuracy": 81.82
+    },
+    "DOG1": {
+        "correct": 13,
+        "total": 17,
+        "accuracy": 76.47
+    },
+    "BREAKFAST1": {
+        "correct": 6,
+        "total": 14,
+        "accuracy": 42.86
+    },
+    "DARK1": {
+        "correct": 13,
+        "total": 15,
+        "accuracy": 86.67
+    },
+    "DEAF1": {
+        "correct": 13,
+        "total": 15,
+        "accuracy": 86.67
+    },
+    "PARTY1": {
+        "correct": 15,
+        "total": 15,
+        "accuracy": 100.0
+    },
+    "DEVELOP1": {
+        "correct": 10,
+        "total": 14,
+        "accuracy": 71.43
+    },
+    "BEE1": {
+        "correct": 12,
+        "total": 14,
+        "accuracy": 85.71
+    },
+    "FINE1": {
+        "correct": 14,
+        "total": 16,
+        "accuracy": 87.5
+    },
+    "CHRISTMAS1": {
+        "correct": 11,
+        "total": 17,
+        "accuracy": 64.71
+    },
+    "HALLOWEEN1": {
+        "correct": 13,
+        "total": 14,
+        "accuracy": 92.86
+    },
+    "RIVER1": {
+        "correct": 9,
+        "total": 15,
+        "accuracy": 60.0
+    },
+    "LUNCH1": {
+        "correct": 8,
+        "total": 14,
+        "accuracy": 57.14
+    },
+    "HOSPITAL1": {
+        "correct": 14,
+        "total": 17,
+        "accuracy": 82.35
+    },
+    "MEAT1": {
+        "correct": 7,
+        "total": 10,
+        "accuracy": 70.0
+    },
+    "DINNER1": {
+        "correct": 8,
+        "total": 15,
+        "accuracy": 53.33
+    },
+    "EAT1": {
+        "correct": 16,
+        "total": 17,
+        "accuracy": 94.12
+    },
+    "MOVIE1": {
+        "correct": 9,
+        "total": 16,
+        "accuracy": 56.25
+    },
+    "SINK": {
+        "correct": 6,
+        "total": 10,
+        "accuracy": 60.0
+    },
+    "BASKETBALL1": {
+        "correct": 17,
+        "total": 20,
+        "accuracy": 85.0
+    }
+}

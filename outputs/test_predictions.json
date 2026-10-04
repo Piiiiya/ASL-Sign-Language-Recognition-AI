@@ -1,0 +1,2982 @@
+[
+    {
+        "sample_index": 0,
+        "actual_id": 15,
+        "actual_sign": "DINNER1",
+        "predicted_id": 15,
+        "predicted_sign": "DINNER1",
+        "confidence": 0.9865038394927979,
+        "confidence_percent": 98.65038394927979,
+        "correct": true
+    },
+    {
+        "sample_index": 1,
+        "actual_id": 1,
+        "actual_sign": "DOG1",
+        "predicted_id": 1,
+        "predicted_sign": "DOG1",
+        "confidence": 0.7346487045288086,
+        "confidence_percent": 73.46487045288086,
+        "correct": true
+    },
+    {
+        "sample_index": 2,
+        "actual_id": 16,
+        "actual_sign": "EAT1",
+        "predicted_id": 1,
+        "predicted_sign": "DOG1",
+        "confidence": 0.4241235852241516,
+        "confidence_percent": 42.41235852241516,
+        "correct": false
+    },
+    {
+        "sample_index": 3,
+        "actual_id": 3,
+        "actual_sign": "DARK1",
+        "predicted_id": 3,
+        "predicted_sign": "DARK1",
+        "confidence": 0.9925758838653564,
+        "confidence_percent": 99.25758838653564,
+        "correct": true
+    },
+    {
+        "sample_index": 4,
+        "actual_id": 0,
+        "actual_sign": "APPLE",
+        "predicted_id": 0,
+        "predicted_sign": "APPLE",
+        "confidence": 0.9789127707481384,
+        "confidence_percent": 97.89127707481384,
+        "correct": true
+    },
+    {
+        "sample_index": 5,
+        "actual_id": 18,
+        "actual_sign": "SINK",
+        "predicted_id": 18,
+        "predicted_sign": "SINK",
+        "confidence": 0.9884733557701111,
+        "confidence_percent": 98.84733557701111,
+        "correct": true
+    },
+    {
+        "sample_index": 6,
+        "actual_id": 11,
+        "actual_sign": "RIVER1",
+        "predicted_id": 3,
+        "predicted_sign": "DARK1",
+        "confidence": 0.8011482954025269,
+        "confidence_percent": 80.11482954025269,
+        "correct": false
+    },
+    {
+        "sample_index": 7,
+        "actual_id": 9,
+        "actual_sign": "CHRISTMAS1",
+        "predicted_id": 9,
+        "predicted_sign": "CHRISTMAS1",
+        "confidence": 0.8435283899307251,
+        "confidence_percent": 84.35283899307251,
+        "correct": true
+    },
+    {
+        "sample_index": 8,
+        "actual_id": 12,
+        "actual_sign": "LUNCH1",
+        "predicted_id": 12,
+        "predicted_sign": "LUNCH1",
+        "confidence": 0.9377164840698242,
+        "confidence_percent": 93.77164840698242,
+        "correct": true
+    },
+    {
+        "sample_index": 9,
+        "actual_id": 19,
+        "actual_sign": "BASKETBALL1",
+        "predicted_id": 6,
+        "predicted_sign": "DEVELOP1",
+        "confidence": 0.7293184995651245,
+        "confidence_percent": 72.93184995651245,
+        "correct": false
+    },
+    {
+        "sample_index": 10,
+        "actual_id": 6,
+        "actual_sign": "DEVELOP1",
+        "predicted_id": 10,
+        "predicted_sign": "HALLOWEEN1",
+        "confidence": 0.842997133731842,
+        "confidence_percent": 84.2997133731842,
+        "correct": false
+    },
+    {
+        "sample_index": 11,
+        "actual_id": 3,
+        "actual_sign": "DARK1",
+        "predicted_id": 3,
+        "predicted_sign": "DARK1",
+        "confidence": 0.9982818365097046,
+        "confidence_percent": 99.82818365097046,
+        "correct": true
+    },
+    {
+        "sample_index": 12,
+        "actual_id": 19,
+        "actual_sign": "BASKETBALL1",
+        "predicted_id": 6,
+        "predicted_sign": "DEVELOP1",
+        "confidence": 0.5097271203994751,
+        "confidence_percent": 50.97271203994751,
+        "correct": false
+    },
+    {
+        "sample_index": 13,
+        "actual_id": 3,
+        "actual_sign": "DARK1",
+        "predicted_id": 3,
+        "predicted_sign": "DARK1",
+        "confidence": 0.9984512329101562,
+        "confidence_percent": 99.84512329101562,
+        "correct": true
+    },
+    {
+        "sample_index": 14,
+        "actual_id": 0,
+        "actual_sign": "APPLE",
+        "predicted_id": 0,
+        "predicted_sign": "APPLE",
+        "confidence": 0.9647729396820068,
+        "confidence_percent": 96.47729396820068,
+        "correct": true
+    },
+    {
+        "sample_index": 15,
+        "actual_id": 1,
+        "actual_sign": "DOG1",
+        "predicted_id": 1,
+        "predicted_sign": "DOG1",
+        "confidence": 0.9697185754776001,
+        "confidence_percent": 96.97185754776001,
+        "correct": true
+    },
+    {
+        "sample_index": 16,
+        "actual_id": 3,
+        "actual_sign": "DARK1",
+        "predicted_id": 3,
+        "predicted_sign": "DARK1",
+        "confidence": 0.977914571762085,
+        "confidence_percent": 97.7914571762085,
+        "correct": true
+    },
+    {
+        "sample_index": 17,
+        "actual_id": 13,
+        "actual_sign": "HOSPITAL1",
+        "predicted_id": 13,
+        "predicted_sign": "HOSPITAL1",
+        "confidence": 0.9368929862976074,
+        "confidence_percent": 93.68929862976074,
+        "correct": true
+    },
+    {
+        "sample_index": 18,
+        "actual_id": 1,
+        "actual_sign": "DOG1",
+        "predicted_id": 1,
+        "predicted_sign": "DOG1",
+        "confidence": 0.9884082674980164,
+        "confidence_percent": 98.84082674980164,
+        "correct": true
+    },
+    {
+        "sample_index": 19,
+        "actual_id": 17,
+        "actual_sign": "MOVIE1",
+        "predicted_id": 14,
+        "predicted_sign": "MEAT1",
+        "confidence": 0.3719055950641632,
+        "confidence_percent": 37.19055950641632,
+        "correct": false
+    },
+    {
+        "sample_index": 20,
+        "actual_id": 19,
+        "actual_sign": "BASKETBALL1",
+        "predicted_id": 6,
+        "predicted_sign": "DEVELOP1",
+        "confidence": 0.5352737307548523,
+        "confidence_percent": 53.52737307548523,
+        "correct": false
+    },
+    {
+        "sample_index": 21,
+        "actual_id": 11,
+        "actual_sign": "RIVER1",
+        "predicted_id": 6,
+        "predicted_sign": "DEVELOP1",
+        "confidence": 0.5236267447471619,
+        "confidence_percent": 52.36267447471619,
+        "correct": false
+    },
+    {
+        "sample_index": 22,
+        "actual_id": 3,
+        "actual_sign": "DARK1",
+        "predicted_id": 3,
+        "predicted_sign": "DARK1",
+        "confidence": 0.9978076815605164,
+        "confidence_percent": 99.78076815605164,
+        "correct": true
+    },
+    {
+        "sample_index": 23,
+        "actual_id": 19,
+        "actual_sign": "BASKETBALL1",
+        "predicted_id": 6,
+        "predicted_sign": "DEVELOP1",
+        "confidence": 0.5942324995994568,
+        "confidence_percent": 59.42324995994568,
+        "correct": false
+    },
+    {
+        "sample_index": 24,
+        "actual_id": 12,
+        "actual_sign": "LUNCH1",
+        "predicted_id": 9,
+        "predicted_sign": "CHRISTMAS1",
+        "confidence": 0.9169074892997742,
+        "confidence_percent": 91.69074892997742,
+        "correct": false
+    },
+    {
+        "sample_index": 25,
+        "actual_id": 19,
+        "actual_sign": "BASKETBALL1",
+        "predicted_id": 6,
+        "predicted_sign": "DEVELOP1",
+        "confidence": 0.5160534977912903,
+        "confidence_percent": 51.60534977912903,
+        "correct": false
+    },
+    {
+        "sample_index": 26,
+        "actual_id": 3,
+        "actual_sign": "DARK1",
+        "predicted_id": 3,
+        "predicted_sign": "DARK1",
+        "confidence": 0.9986754059791565,
+        "confidence_percent": 99.86754059791565,
+        "correct": true
+    },
+    {
+        "sample_index": 27,
+        "actual_id": 13,
+        "actual_sign": "HOSPITAL1",
+        "predicted_id": 13,
+        "predicted_sign": "HOSPITAL1",
+        "confidence": 0.9660219550132751,
+        "confidence_percent": 96.60219550132751,
+        "correct": true
+    },
+    {
+        "sample_index": 28,
+        "actual_id": 12,
+        "actual_sign": "LUNCH1",
+        "predicted_id": 12,
+        "predicted_sign": "LUNCH1",
+        "confidence": 0.9206583499908447,
+        "confidence_percent": 92.06583499908447,
+        "correct": true
+    },
+    {
+        "sample_index": 29,
+        "actual_id": 6,
+        "actual_sign": "DEVELOP1",
+        "predicted_id": 6,
+        "predicted_sign": "DEVELOP1",
+        "confidence": 0.715393602848053,
+        "confidence_percent": 71.5393602848053,
+        "correct": true
+    },
+    {
+        "sample_index": 30,
+        "actual_id": 4,
+        "actual_sign": "DEAF1",
+        "predicted_id": 4,
+        "predicted_sign": "DEAF1",
+        "confidence": 0.9287514090538025,
+        "confidence_percent": 92.87514090538025,
+        "correct": true
+    },
+    {
+        "sample_index": 31,
+        "actual_id": 0,
+        "actual_sign": "APPLE",
+        "predicted_id": 0,
+        "predicted_sign": "APPLE",
+        "confidence": 0.9720502495765686,
+        "confidence_percent": 97.20502495765686,
+        "correct": true
+    },
+    {
+        "sample_index": 32,
+        "actual_id": 6,
+        "actual_sign": "DEVELOP1",
+        "predicted_id": 7,
+        "predicted_sign": "BEE1",
+        "confidence": 0.8745061755180359,
+        "confidence_percent": 87.45061755180359,
+        "correct": false
+    },
+    {
+        "sample_index": 33,
+        "actual_id": 18,
+        "actual_sign": "SINK",
+        "predicted_id": 18,
+        "predicted_sign": "SINK",
+        "confidence": 0.9884729981422424,
+        "confidence_percent": 98.84729981422424,
+        "correct": true
+    },
+    {
+        "sample_index": 34,
+        "actual_id": 8,
+        "actual_sign": "FINE1",
+        "predicted_id": 8,
+        "predicted_sign": "FINE1",
+        "confidence": 0.9037526845932007,
+        "confidence_percent": 90.37526845932007,
+        "correct": true
+    },
+    {
+        "sample_index": 35,
+        "actual_id": 13,
+        "actual_sign": "HOSPITAL1",
+        "predicted_id": 13,
+        "predicted_sign": "HOSPITAL1",
+        "confidence": 0.9491111636161804,
+        "confidence_percent": 94.91111636161804,
+        "correct": true
+    },
+    {
+        "sample_index": 36,
+        "actual_id": 14,
+        "actual_sign": "MEAT1",
+        "predicted_id": 14,
+        "predicted_sign": "MEAT1",
+        "confidence": 0.8522617816925049,
+        "confidence_percent": 85.22617816925049,
+        "correct": true
+    },
+    {
+        "sample_index": 37,
+        "actual_id": 17,
+        "actual_sign": "MOVIE1",
+        "predicted_id": 17,
+        "predicted_sign": "MOVIE1",
+        "confidence": 0.9883339405059814,
+        "confidence_percent": 98.83339405059814,
+        "correct": true
+    },
+    {
+        "sample_index": 38,
+        "actual_id": 4,
+        "actual_sign": "DEAF1",
+        "predicted_id": 4,
+        "predicted_sign": "DEAF1",
+        "confidence": 0.9398200511932373,
+        "confidence_percent": 93.98200511932373,
+        "correct": true
+    },
+    {
+        "sample_index": 39,
+        "actual_id": 16,
+        "actual_sign": "EAT1",
+        "predicted_id": 16,
+        "predicted_sign": "EAT1",
+        "confidence": 0.882536768913269,
+        "confidence_percent": 88.2536768913269,
+        "correct": true
+    },
+    {
+        "sample_index": 40,
+        "actual_id": 4,
+        "actual_sign": "DEAF1",
+        "predicted_id": 4,
+        "predicted_sign": "DEAF1",
+        "confidence": 0.5029215216636658,
+        "confidence_percent": 50.29215216636658,
+        "correct": true
+    },
+    {
+        "sample_index": 41,
+        "actual_id": 2,
+        "actual_sign": "BREAKFAST1",
+        "predicted_id": 9,
+        "predicted_sign": "CHRISTMAS1",
+        "confidence": 0.5197665691375732,
+        "confidence_percent": 51.976656913757324,
+        "correct": false
+    },
+    {
+        "sample_index": 42,
+        "actual_id": 17,
+        "actual_sign": "MOVIE1",
+        "predicted_id": 18,
+        "predicted_sign": "SINK",
+        "confidence": 0.9840154647827148,
+        "confidence_percent": 98.40154647827148,
+        "correct": false
+    },
+    {
+        "sample_index": 43,
+        "actual_id": 12,
+        "actual_sign": "LUNCH1",
+        "predicted_id": 4,
+        "predicted_sign": "DEAF1",
+        "confidence": 0.41926729679107666,
+        "confidence_percent": 41.926729679107666,
+        "correct": false
+    },
+    {
+        "sample_index": 44,
+        "actual_id": 11,
+        "actual_sign": "RIVER1",
+        "predicted_id": 11,
+        "predicted_sign": "RIVER1",
+        "confidence": 0.9350875020027161,
+        "confidence_percent": 93.5087502002716,
+        "correct": true
+    },
+    {
+        "sample_index": 45,
+        "actual_id": 6,
+        "actual_sign": "DEVELOP1",
+        "predicted_id": 6,
+        "predicted_sign": "DEVELOP1",
+        "confidence": 0.4999110996723175,
+        "confidence_percent": 49.99110996723175,
+        "correct": true
+    },
+    {
+        "sample_index": 46,
+        "actual_id": 11,
+        "actual_sign": "RIVER1",
+        "predicted_id": 18,
+        "predicted_sign": "SINK",
+        "confidence": 0.7240764498710632,
+        "confidence_percent": 72.40764498710632,
+        "correct": false
+    },
+    {
+        "sample_index": 47,
+        "actual_id": 7,
+        "actual_sign": "BEE1",
+        "predicted_id": 7,
+        "predicted_sign": "BEE1",
+        "confidence": 0.9360142946243286,
+        "confidence_percent": 93.60142946243286,
+        "correct": true
+    },
+    {
+        "sample_index": 48,
+        "actual_id": 15,
+        "actual_sign": "DINNER1",
+        "predicted_id": 16,
+        "predicted_sign": "EAT1",
+        "confidence": 0.6000681519508362,
+        "confidence_percent": 60.00681519508362,
+        "correct": false
+    },
+    {
+        "sample_index": 49,
+        "actual_id": 1,
+        "actual_sign": "DOG1",
+        "predicted_id": 1,
+        "predicted_sign": "DOG1",
+        "confidence": 0.8495810031890869,
+        "confidence_percent": 84.95810031890869,
+        "correct": true
+    },
+    {
+        "sample_index": 50,
+        "actual_id": 3,
+        "actual_sign": "DARK1",
+        "predicted_id": 3,
+        "predicted_sign": "DARK1",
+        "confidence": 0.9986850619316101,
+        "confidence_percent": 99.86850619316101,
+        "correct": true
+    },
+    {
+        "sample_index": 51,
+        "actual_id": 13,
+        "actual_sign": "HOSPITAL1",
+        "predicted_id": 13,
+        "predicted_sign": "HOSPITAL1",
+        "confidence": 0.9270349740982056,
+        "confidence_percent": 92.70349740982056,
+        "correct": true
+    },
+    {
+        "sample_index": 52,
+        "actual_id": 15,
+        "actual_sign": "DINNER1",
+        "predicted_id": 16,
+        "predicted_sign": "EAT1",
+        "confidence": 0.8507638573646545,
+        "confidence_percent": 85.07638573646545,
+        "correct": false
+    },
+    {
+        "sample_index": 53,
+        "actual_id": 9,
+        "actual_sign": "CHRISTMAS1",
+        "predicted_id": 9,
+        "predicted_sign": "CHRISTMAS1",
+        "confidence": 0.3388926684856415,
+        "confidence_percent": 33.88926684856415,
+        "correct": true
+    },
+    {
+        "sample_index": 54,
+        "actual_id": 8,
+        "actual_sign": "FINE1",
+        "predicted_id": 8,
+        "predicted_sign": "FINE1",
+        "confidence": 0.6951091885566711,
+        "confidence_percent": 69.51091885566711,
+        "correct": true
+    },
+    {
+        "sample_index": 55,
+        "actual_id": 9,
+        "actual_sign": "CHRISTMAS1",
+        "predicted_id": 9,
+        "predicted_sign": "CHRISTMAS1",
+        "confidence": 0.7905832529067993,
+        "confidence_percent": 79.05832529067993,
+        "correct": true
+    },
+    {
+        "sample_index": 56,
+        "actual_id": 17,
+        "actual_sign": "MOVIE1",
+        "predicted_id": 18,
+        "predicted_sign": "SINK",
+        "confidence": 0.8864549398422241,
+        "confidence_percent": 88.64549398422241,
+        "correct": false
+    },
+    {
+        "sample_index": 57,
+        "actual_id": 18,
+        "actual_sign": "SINK",
+        "predicted_id": 18,
+        "predicted_sign": "SINK",
+        "confidence": 0.9885194897651672,
+        "confidence_percent": 98.85194897651672,
+        "correct": true
+    },
+    {
+        "sample_index": 58,
+        "actual_id": 5,
+        "actual_sign": "PARTY1",
+        "predicted_id": 5,
+        "predicted_sign": "PARTY1",
+        "confidence": 0.977645754814148,
+        "confidence_percent": 97.7645754814148,
+        "correct": true
+    },
+    {
+        "sample_index": 59,
+        "actual_id": 4,
+        "actual_sign": "DEAF1",
+        "predicted_id": 4,
+        "predicted_sign": "DEAF1",
+        "confidence": 0.8201296925544739,
+        "confidence_percent": 82.01296925544739,
+        "correct": true
+    },
+    {
+        "sample_index": 60,
+        "actual_id": 4,
+        "actual_sign": "DEAF1",
+        "predicted_id": 4,
+        "predicted_sign": "DEAF1",
+        "confidence": 0.9351244568824768,
+        "confidence_percent": 93.51244568824768,
+        "correct": true
+    },
+    {
+        "sample_index": 61,
+        "actual_id": 6,
+        "actual_sign": "DEVELOP1",
+        "predicted_id": 10,
+        "predicted_sign": "HALLOWEEN1",
+        "confidence": 0.9589096903800964,
+        "confidence_percent": 95.89096903800964,
+        "correct": false
+    },
+    {
+        "sample_index": 62,
+        "actual_id": 15,
+        "actual_sign": "DINNER1",
+        "predicted_id": 3,
+        "predicted_sign": "DARK1",
+        "confidence": 0.449518620967865,
+        "confidence_percent": 44.9518620967865,
+        "correct": false
+    },
+    {
+        "sample_index": 63,
+        "actual_id": 10,
+        "actual_sign": "HALLOWEEN1",
+        "predicted_id": 10,
+        "predicted_sign": "HALLOWEEN1",
+        "confidence": 0.9323184490203857,
+        "confidence_percent": 93.23184490203857,
+        "correct": true
+    },
+    {
+        "sample_index": 64,
+        "actual_id": 5,
+        "actual_sign": "PARTY1",
+        "predicted_id": 5,
+        "predicted_sign": "PARTY1",
+        "confidence": 0.9098213911056519,
+        "confidence_percent": 90.98213911056519,
+        "correct": true
+    },
+    {
+        "sample_index": 65,
+        "actual_id": 3,
+        "actual_sign": "DARK1",
+        "predicted_id": 10,
+        "predicted_sign": "HALLOWEEN1",
+        "confidence": 0.907264232635498,
+        "confidence_percent": 90.7264232635498,
+        "correct": false
+    },
+    {
+        "sample_index": 66,
+        "actual_id": 12,
+        "actual_sign": "LUNCH1",
+        "predicted_id": 13,
+        "predicted_sign": "HOSPITAL1",
+        "confidence": 0.6094810962677002,
+        "confidence_percent": 60.94810962677002,
+        "correct": false
+    },
+    {
+        "sample_index": 67,
+        "actual_id": 11,
+        "actual_sign": "RIVER1",
+        "predicted_id": 1,
+        "predicted_sign": "DOG1",
+        "confidence": 0.6887256503105164,
+        "confidence_percent": 68.87256503105164,
+        "correct": false
+    },
+    {
+        "sample_index": 68,
+        "actual_id": 14,
+        "actual_sign": "MEAT1",
+        "predicted_id": 14,
+        "predicted_sign": "MEAT1",
+        "confidence": 0.992612361907959,
+        "confidence_percent": 99.2612361907959,
+        "correct": true
+    },
+    {
+        "sample_index": 69,
+        "actual_id": 6,
+        "actual_sign": "DEVELOP1",
+        "predicted_id": 8,
+        "predicted_sign": "FINE1",
+        "confidence": 0.6826348900794983,
+        "confidence_percent": 68.26348900794983,
+        "correct": false
+    },
+    {
+        "sample_index": 70,
+        "actual_id": 14,
+        "actual_sign": "MEAT1",
+        "predicted_id": 5,
+        "predicted_sign": "PARTY1",
+        "confidence": 0.9584159255027771,
+        "confidence_percent": 95.84159255027771,
+        "correct": false
+    },
+    {
+        "sample_index": 71,
+        "actual_id": 15,
+        "actual_sign": "DINNER1",
+        "predicted_id": 15,
+        "predicted_sign": "DINNER1",
+        "confidence": 0.8319404125213623,
+        "confidence_percent": 83.19404125213623,
+        "correct": true
+    },
+    {
+        "sample_index": 72,
+        "actual_id": 4,
+        "actual_sign": "DEAF1",
+        "predicted_id": 4,
+        "predicted_sign": "DEAF1",
+        "confidence": 0.5321402549743652,
+        "confidence_percent": 53.21402549743652,
+        "correct": true
+    },
+    {
+        "sample_index": 73,
+        "actual_id": 9,
+        "actual_sign": "CHRISTMAS1",
+        "predicted_id": 12,
+        "predicted_sign": "LUNCH1",
+        "confidence": 0.41679006814956665,
+        "confidence_percent": 41.679006814956665,
+        "correct": false
+    },
+    {
+        "sample_index": 74,
+        "actual_id": 16,
+        "actual_sign": "EAT1",
+        "predicted_id": 16,
+        "predicted_sign": "EAT1",
+        "confidence": 0.9071645736694336,
+        "confidence_percent": 90.71645736694336,
+        "correct": true
+    },
+    {
+        "sample_index": 75,
+        "actual_id": 11,
+        "actual_sign": "RIVER1",
+        "predicted_id": 18,
+        "predicted_sign": "SINK",
+        "confidence": 0.9471298456192017,
+        "confidence_percent": 94.71298456192017,
+        "correct": false
+    },
+    {
+        "sample_index": 76,
+        "actual_id": 2,
+        "actual_sign": "BREAKFAST1",
+        "predicted_id": 2,
+        "predicted_sign": "BREAKFAST1",
+        "confidence": 0.3940374553203583,
+        "confidence_percent": 39.40374553203583,
+        "correct": true
+    },
+    {
+        "sample_index": 77,
+        "actual_id": 0,
+        "actual_sign": "APPLE",
+        "predicted_id": 0,
+        "predicted_sign": "APPLE",
+        "confidence": 0.9418967962265015,
+        "confidence_percent": 94.18967962265015,
+        "correct": true
+    },
+    {
+        "sample_index": 78,
+        "actual_id": 8,
+        "actual_sign": "FINE1",
+        "predicted_id": 3,
+        "predicted_sign": "DARK1",
+        "confidence": 0.4340622127056122,
+        "confidence_percent": 43.40622127056122,
+        "correct": false
+    },
+    {
+        "sample_index": 79,
+        "actual_id": 10,
+        "actual_sign": "HALLOWEEN1",
+        "predicted_id": 10,
+        "predicted_sign": "HALLOWEEN1",
+        "confidence": 0.9872161746025085,
+        "confidence_percent": 98.72161746025085,
+        "correct": true
+    },
+    {
+        "sample_index": 80,
+        "actual_id": 9,
+        "actual_sign": "CHRISTMAS1",
+        "predicted_id": 5,
+        "predicted_sign": "PARTY1",
+        "confidence": 0.8647826313972473,
+        "confidence_percent": 86.47826313972473,
+        "correct": false
+    },
+    {
+        "sample_index": 81,
+        "actual_id": 10,
+        "actual_sign": "HALLOWEEN1",
+        "predicted_id": 10,
+        "predicted_sign": "HALLOWEEN1",
+        "confidence": 0.9784111976623535,
+        "confidence_percent": 97.84111976623535,
+        "correct": true
+    },
+    {
+        "sample_index": 82,
+        "actual_id": 2,
+        "actual_sign": "BREAKFAST1",
+        "predicted_id": 2,
+        "predicted_sign": "BREAKFAST1",
+        "confidence": 0.5727149248123169,
+        "confidence_percent": 57.27149248123169,
+        "correct": true
+    },
+    {
+        "sample_index": 83,
+        "actual_id": 3,
+        "actual_sign": "DARK1",
+        "predicted_id": 3,
+        "predicted_sign": "DARK1",
+        "confidence": 0.9985652565956116,
+        "confidence_percent": 99.85652565956116,
+        "correct": true
+    },
+    {
+        "sample_index": 84,
+        "actual_id": 8,
+        "actual_sign": "FINE1",
+        "predicted_id": 9,
+        "predicted_sign": "CHRISTMAS1",
+        "confidence": 0.5496037602424622,
+        "confidence_percent": 54.960376024246216,
+        "correct": false
+    },
+    {
+        "sample_index": 85,
+        "actual_id": 11,
+        "actual_sign": "RIVER1",
+        "predicted_id": 11,
+        "predicted_sign": "RIVER1",
+        "confidence": 0.905048131942749,
+        "confidence_percent": 90.5048131942749,
+        "correct": true
+    },
+    {
+        "sample_index": 86,
+        "actual_id": 15,
+        "actual_sign": "DINNER1",
+        "predicted_id": 15,
+        "predicted_sign": "DINNER1",
+        "confidence": 0.949788510799408,
+        "confidence_percent": 94.9788510799408,
+        "correct": true
+    },
+    {
+        "sample_index": 87,
+        "actual_id": 7,
+        "actual_sign": "BEE1",
+        "predicted_id": 7,
+        "predicted_sign": "BEE1",
+        "confidence": 0.9381189346313477,
+        "confidence_percent": 93.81189346313477,
+        "correct": true
+    },
+    {
+        "sample_index": 88,
+        "actual_id": 15,
+        "actual_sign": "DINNER1",
+        "predicted_id": 15,
+        "predicted_sign": "DINNER1",
+        "confidence": 0.8675788640975952,
+        "confidence_percent": 86.75788640975952,
+        "correct": true
+    },
+    {
+        "sample_index": 89,
+        "actual_id": 13,
+        "actual_sign": "HOSPITAL1",
+        "predicted_id": 13,
+        "predicted_sign": "HOSPITAL1",
+        "confidence": 0.9374045133590698,
+        "confidence_percent": 93.74045133590698,
+        "correct": true
+    },
+    {
+        "sample_index": 90,
+        "actual_id": 12,
+        "actual_sign": "LUNCH1",
+        "predicted_id": 0,
+        "predicted_sign": "APPLE",
+        "confidence": 0.7217692136764526,
+        "confidence_percent": 72.17692136764526,
+        "correct": false
+    },
+    {
+        "sample_index": 91,
+        "actual_id": 18,
+        "actual_sign": "SINK",
+        "predicted_id": 11,
+        "predicted_sign": "RIVER1",
+        "confidence": 0.72346031665802,
+        "confidence_percent": 72.346031665802,
+        "correct": false
+    },
+    {
+        "sample_index": 92,
+        "actual_id": 17,
+        "actual_sign": "MOVIE1",
+        "predicted_id": 18,
+        "predicted_sign": "SINK",
+        "confidence": 0.28745609521865845,
+        "confidence_percent": 28.745609521865845,
+        "correct": false
+    },
+    {
+        "sample_index": 93,
+        "actual_id": 7,
+        "actual_sign": "BEE1",
+        "predicted_id": 9,
+        "predicted_sign": "CHRISTMAS1",
+        "confidence": 0.36095771193504333,
+        "confidence_percent": 36.09577119350433,
+        "correct": false
+    },
+    {
+        "sample_index": 94,
+        "actual_id": 0,
+        "actual_sign": "APPLE",
+        "predicted_id": 0,
+        "predicted_sign": "APPLE",
+        "confidence": 0.9748964905738831,
+        "confidence_percent": 97.4896490573883,
+        "correct": true
+    },
+    {
+        "sample_index": 95,
+        "actual_id": 0,
+        "actual_sign": "APPLE",
+        "predicted_id": 0,
+        "predicted_sign": "APPLE",
+        "confidence": 0.913117527961731,
+        "confidence_percent": 91.3117527961731,
+        "correct": true
+    },
+    {
+        "sample_index": 96,
+        "actual_id": 11,
+        "actual_sign": "RIVER1",
+        "predicted_id": 11,
+        "predicted_sign": "RIVER1",
+        "confidence": 0.6127863526344299,
+        "confidence_percent": 61.27863526344299,
+        "correct": true
+    },
+    {
+        "sample_index": 97,
+        "actual_id": 19,
+        "actual_sign": "BASKETBALL1",
+        "predicted_id": 11,
+        "predicted_sign": "RIVER1",
+        "confidence": 0.9735142588615417,
+        "confidence_percent": 97.35142588615417,
+        "correct": false
+    },
+    {
+        "sample_index": 98,
+        "actual_id": 2,
+        "actual_sign": "BREAKFAST1",
+        "predicted_id": 2,
+        "predicted_sign": "BREAKFAST1",
+        "confidence": 0.9363471865653992,
+        "confidence_percent": 93.63471865653992,
+        "correct": true
+    },
+    {
+        "sample_index": 99,
+        "actual_id": 7,
+        "actual_sign": "BEE1",
+        "predicted_id": 7,
+        "predicted_sign": "BEE1",
+        "confidence": 0.66114342212677,
+        "confidence_percent": 66.114342212677,
+        "correct": true
+    },
+    {
+        "sample_index": 100,
+        "actual_id": 4,
+        "actual_sign": "DEAF1",
+        "predicted_id": 4,
+        "predicted_sign": "DEAF1",
+        "confidence": 0.9504274129867554,
+        "confidence_percent": 95.04274129867554,
+        "correct": true
+    },
+    {
+        "sample_index": 101,
+        "actual_id": 19,
+        "actual_sign": "BASKETBALL1",
+        "predicted_id": 19,
+        "predicted_sign": "BASKETBALL1",
+        "confidence": 0.773141622543335,
+        "confidence_percent": 77.3141622543335,
+        "correct": true
+    },
+    {
+        "sample_index": 102,
+        "actual_id": 17,
+        "actual_sign": "MOVIE1",
+        "predicted_id": 17,
+        "predicted_sign": "MOVIE1",
+        "confidence": 0.9866912364959717,
+        "confidence_percent": 98.66912364959717,
+        "correct": true
+    },
+    {
+        "sample_index": 103,
+        "actual_id": 11,
+        "actual_sign": "RIVER1",
+        "predicted_id": 18,
+        "predicted_sign": "SINK",
+        "confidence": 0.978235125541687,
+        "confidence_percent": 97.8235125541687,
+        "correct": false
+    },
+    {
+        "sample_index": 104,
+        "actual_id": 3,
+        "actual_sign": "DARK1",
+        "predicted_id": 3,
+        "predicted_sign": "DARK1",
+        "confidence": 0.997873067855835,
+        "confidence_percent": 99.7873067855835,
+        "correct": true
+    },
+    {
+        "sample_index": 105,
+        "actual_id": 13,
+        "actual_sign": "HOSPITAL1",
+        "predicted_id": 13,
+        "predicted_sign": "HOSPITAL1",
+        "confidence": 0.9713352918624878,
+        "confidence_percent": 97.13352918624878,
+        "correct": true
+    },
+    {
+        "sample_index": 106,
+        "actual_id": 9,
+        "actual_sign": "CHRISTMAS1",
+        "predicted_id": 7,
+        "predicted_sign": "BEE1",
+        "confidence": 0.8243950009346008,
+        "confidence_percent": 82.43950009346008,
+        "correct": false
+    },
+    {
+        "sample_index": 107,
+        "actual_id": 12,
+        "actual_sign": "LUNCH1",
+        "predicted_id": 12,
+        "predicted_sign": "LUNCH1",
+        "confidence": 0.5950629115104675,
+        "confidence_percent": 59.50629115104675,
+        "correct": true
+    },
+    {
+        "sample_index": 108,
+        "actual_id": 5,
+        "actual_sign": "PARTY1",
+        "predicted_id": 5,
+        "predicted_sign": "PARTY1",
+        "confidence": 0.991151750087738,
+        "confidence_percent": 99.1151750087738,
+        "correct": true
+    },
+    {
+        "sample_index": 109,
+        "actual_id": 9,
+        "actual_sign": "CHRISTMAS1",
+        "predicted_id": 0,
+        "predicted_sign": "APPLE",
+        "confidence": 0.7418394684791565,
+        "confidence_percent": 74.18394684791565,
+        "correct": false
+    },
+    {
+        "sample_index": 110,
+        "actual_id": 13,
+        "actual_sign": "HOSPITAL1",
+        "predicted_id": 0,
+        "predicted_sign": "APPLE",
+        "confidence": 0.6996528506278992,
+        "confidence_percent": 69.96528506278992,
+        "correct": false
+    },
+    {
+        "sample_index": 111,
+        "actual_id": 11,
+        "actual_sign": "RIVER1",
+        "predicted_id": 11,
+        "predicted_sign": "RIVER1",
+        "confidence": 0.9609782695770264,
+        "confidence_percent": 96.09782695770264,
+        "correct": true
+    },
+    {
+        "sample_index": 112,
+        "actual_id": 10,
+        "actual_sign": "HALLOWEEN1",
+        "predicted_id": 10,
+        "predicted_sign": "HALLOWEEN1",
+        "confidence": 0.985527753829956,
+        "confidence_percent": 98.5527753829956,
+        "correct": true
+    },
+    {
+        "sample_index": 113,
+        "actual_id": 13,
+        "actual_sign": "HOSPITAL1",
+        "predicted_id": 13,
+        "predicted_sign": "HOSPITAL1",
+        "confidence": 0.6897921562194824,
+        "confidence_percent": 68.97921562194824,
+        "correct": true
+    },
+    {
+        "sample_index": 114,
+        "actual_id": 7,
+        "actual_sign": "BEE1",
+        "predicted_id": 7,
+        "predicted_sign": "BEE1",
+        "confidence": 0.9244233965873718,
+        "confidence_percent": 92.44233965873718,
+        "correct": true
+    },
+    {
+        "sample_index": 115,
+        "actual_id": 6,
+        "actual_sign": "DEVELOP1",
+        "predicted_id": 6,
+        "predicted_sign": "DEVELOP1",
+        "confidence": 0.7086873650550842,
+        "confidence_percent": 70.86873650550842,
+        "correct": true
+    },
+    {
+        "sample_index": 116,
+        "actual_id": 8,
+        "actual_sign": "FINE1",
+        "predicted_id": 8,
+        "predicted_sign": "FINE1",
+        "confidence": 0.7146634459495544,
+        "confidence_percent": 71.46634459495544,
+        "correct": true
+    },
+    {
+        "sample_index": 117,
+        "actual_id": 7,
+        "actual_sign": "BEE1",
+        "predicted_id": 7,
+        "predicted_sign": "BEE1",
+        "confidence": 0.6205484867095947,
+        "confidence_percent": 62.05484867095947,
+        "correct": true
+    },
+    {
+        "sample_index": 118,
+        "actual_id": 7,
+        "actual_sign": "BEE1",
+        "predicted_id": 7,
+        "predicted_sign": "BEE1",
+        "confidence": 0.5748960375785828,
+        "confidence_percent": 57.489603757858276,
+        "correct": true
+    },
+    {
+        "sample_index": 119,
+        "actual_id": 5,
+        "actual_sign": "PARTY1",
+        "predicted_id": 5,
+        "predicted_sign": "PARTY1",
+        "confidence": 0.9901236891746521,
+        "confidence_percent": 99.01236891746521,
+        "correct": true
+    },
+    {
+        "sample_index": 120,
+        "actual_id": 19,
+        "actual_sign": "BASKETBALL1",
+        "predicted_id": 10,
+        "predicted_sign": "HALLOWEEN1",
+        "confidence": 0.9846965074539185,
+        "confidence_percent": 98.46965074539185,
+        "correct": false
+    },
+    {
+        "sample_index": 121,
+        "actual_id": 8,
+        "actual_sign": "FINE1",
+        "predicted_id": 8,
+        "predicted_sign": "FINE1",
+        "confidence": 0.9513888955116272,
+        "confidence_percent": 95.13888955116272,
+        "correct": true
+    },
+    {
+        "sample_index": 122,
+        "actual_id": 10,
+        "actual_sign": "HALLOWEEN1",
+        "predicted_id": 10,
+        "predicted_sign": "HALLOWEEN1",
+        "confidence": 0.9734838604927063,
+        "confidence_percent": 97.34838604927063,
+        "correct": true
+    },
+    {
+        "sample_index": 123,
+        "actual_id": 15,
+        "actual_sign": "DINNER1",
+        "predicted_id": 5,
+        "predicted_sign": "PARTY1",
+        "confidence": 0.6804706454277039,
+        "confidence_percent": 68.04706454277039,
+        "correct": false
+    },
+    {
+        "sample_index": 124,
+        "actual_id": 16,
+        "actual_sign": "EAT1",
+        "predicted_id": 16,
+        "predicted_sign": "EAT1",
+        "confidence": 0.8579184412956238,
+        "confidence_percent": 85.79184412956238,
+        "correct": true
+    },
+    {
+        "sample_index": 125,
+        "actual_id": 9,
+        "actual_sign": "CHRISTMAS1",
+        "predicted_id": 9,
+        "predicted_sign": "CHRISTMAS1",
+        "confidence": 0.9725987911224365,
+        "confidence_percent": 97.25987911224365,
+        "correct": true
+    },
+    {
+        "sample_index": 126,
+        "actual_id": 14,
+        "actual_sign": "MEAT1",
+        "predicted_id": 14,
+        "predicted_sign": "MEAT1",
+        "confidence": 0.8816154599189758,
+        "confidence_percent": 88.16154599189758,
+        "correct": true
+    },
+    {
+        "sample_index": 127,
+        "actual_id": 0,
+        "actual_sign": "APPLE",
+        "predicted_id": 18,
+        "predicted_sign": "SINK",
+        "confidence": 0.976751446723938,
+        "confidence_percent": 97.6751446723938,
+        "correct": false
+    },
+    {
+        "sample_index": 128,
+        "actual_id": 1,
+        "actual_sign": "DOG1",
+        "predicted_id": 16,
+        "predicted_sign": "EAT1",
+        "confidence": 0.44058188796043396,
+        "confidence_percent": 44.058188796043396,
+        "correct": false
+    },
+    {
+        "sample_index": 129,
+        "actual_id": 16,
+        "actual_sign": "EAT1",
+        "predicted_id": 15,
+        "predicted_sign": "DINNER1",
+        "confidence": 0.666749894618988,
+        "confidence_percent": 66.6749894618988,
+        "correct": false
+    },
+    {
+        "sample_index": 130,
+        "actual_id": 1,
+        "actual_sign": "DOG1",
+        "predicted_id": 16,
+        "predicted_sign": "EAT1",
+        "confidence": 0.8955073952674866,
+        "confidence_percent": 89.55073952674866,
+        "correct": false
+    },
+    {
+        "sample_index": 131,
+        "actual_id": 2,
+        "actual_sign": "BREAKFAST1",
+        "predicted_id": 7,
+        "predicted_sign": "BEE1",
+        "confidence": 0.32810133695602417,
+        "confidence_percent": 32.81013369560242,
+        "correct": false
+    },
+    {
+        "sample_index": 132,
+        "actual_id": 13,
+        "actual_sign": "HOSPITAL1",
+        "predicted_id": 13,
+        "predicted_sign": "HOSPITAL1",
+        "confidence": 0.9763447642326355,
+        "confidence_percent": 97.63447642326355,
+        "correct": true
+    },
+    {
+        "sample_index": 133,
+        "actual_id": 13,
+        "actual_sign": "HOSPITAL1",
+        "predicted_id": 13,
+        "predicted_sign": "HOSPITAL1",
+        "confidence": 0.9314200282096863,
+        "confidence_percent": 93.14200282096863,
+        "correct": true
+    },
+    {
+        "sample_index": 134,
+        "actual_id": 1,
+        "actual_sign": "DOG1",
+        "predicted_id": 1,
+        "predicted_sign": "DOG1",
+        "confidence": 0.9103250503540039,
+        "confidence_percent": 91.03250503540039,
+        "correct": true
+    },
+    {
+        "sample_index": 135,
+        "actual_id": 14,
+        "actual_sign": "MEAT1",
+        "predicted_id": 5,
+        "predicted_sign": "PARTY1",
+        "confidence": 0.6185870170593262,
+        "confidence_percent": 61.85870170593262,
+        "correct": false
+    },
+    {
+        "sample_index": 136,
+        "actual_id": 16,
+        "actual_sign": "EAT1",
+        "predicted_id": 16,
+        "predicted_sign": "EAT1",
+        "confidence": 0.899030864238739,
+        "confidence_percent": 89.9030864238739,
+        "correct": true
+    },
+    {
+        "sample_index": 137,
+        "actual_id": 4,
+        "actual_sign": "DEAF1",
+        "predicted_id": 4,
+        "predicted_sign": "DEAF1",
+        "confidence": 0.7114317417144775,
+        "confidence_percent": 71.14317417144775,
+        "correct": true
+    },
+    {
+        "sample_index": 138,
+        "actual_id": 3,
+        "actual_sign": "DARK1",
+        "predicted_id": 3,
+        "predicted_sign": "DARK1",
+        "confidence": 0.9977631568908691,
+        "confidence_percent": 99.77631568908691,
+        "correct": true
+    },
+    {
+        "sample_index": 139,
+        "actual_id": 5,
+        "actual_sign": "PARTY1",
+        "predicted_id": 5,
+        "predicted_sign": "PARTY1",
+        "confidence": 0.9461137652397156,
+        "confidence_percent": 94.61137652397156,
+        "correct": true
+    },
+    {
+        "sample_index": 140,
+        "actual_id": 14,
+        "actual_sign": "MEAT1",
+        "predicted_id": 10,
+        "predicted_sign": "HALLOWEEN1",
+        "confidence": 0.7980198860168457,
+        "confidence_percent": 79.80198860168457,
+        "correct": false
+    },
+    {
+        "sample_index": 141,
+        "actual_id": 16,
+        "actual_sign": "EAT1",
+        "predicted_id": 16,
+        "predicted_sign": "EAT1",
+        "confidence": 0.8190628290176392,
+        "confidence_percent": 81.90628290176392,
+        "correct": true
+    },
+    {
+        "sample_index": 142,
+        "actual_id": 2,
+        "actual_sign": "BREAKFAST1",
+        "predicted_id": 9,
+        "predicted_sign": "CHRISTMAS1",
+        "confidence": 0.3731635808944702,
+        "confidence_percent": 37.31635808944702,
+        "correct": false
+    },
+    {
+        "sample_index": 143,
+        "actual_id": 2,
+        "actual_sign": "BREAKFAST1",
+        "predicted_id": 7,
+        "predicted_sign": "BEE1",
+        "confidence": 0.8550686240196228,
+        "confidence_percent": 85.50686240196228,
+        "correct": false
+    },
+    {
+        "sample_index": 144,
+        "actual_id": 1,
+        "actual_sign": "DOG1",
+        "predicted_id": 1,
+        "predicted_sign": "DOG1",
+        "confidence": 0.9851065874099731,
+        "confidence_percent": 98.51065874099731,
+        "correct": true
+    },
+    {
+        "sample_index": 145,
+        "actual_id": 3,
+        "actual_sign": "DARK1",
+        "predicted_id": 3,
+        "predicted_sign": "DARK1",
+        "confidence": 0.9984617233276367,
+        "confidence_percent": 99.84617233276367,
+        "correct": true
+    },
+    {
+        "sample_index": 146,
+        "actual_id": 14,
+        "actual_sign": "MEAT1",
+        "predicted_id": 14,
+        "predicted_sign": "MEAT1",
+        "confidence": 0.9828253388404846,
+        "confidence_percent": 98.28253388404846,
+        "correct": true
+    },
+    {
+        "sample_index": 147,
+        "actual_id": 19,
+        "actual_sign": "BASKETBALL1",
+        "predicted_id": 19,
+        "predicted_sign": "BASKETBALL1",
+        "confidence": 0.5894924998283386,
+        "confidence_percent": 58.94924998283386,
+        "correct": true
+    },
+    {
+        "sample_index": 148,
+        "actual_id": 17,
+        "actual_sign": "MOVIE1",
+        "predicted_id": 17,
+        "predicted_sign": "MOVIE1",
+        "confidence": 0.9891502261161804,
+        "confidence_percent": 98.91502261161804,
+        "correct": true
+    },
+    {
+        "sample_index": 149,
+        "actual_id": 7,
+        "actual_sign": "BEE1",
+        "predicted_id": 7,
+        "predicted_sign": "BEE1",
+        "confidence": 0.624536395072937,
+        "confidence_percent": 62.4536395072937,
+        "correct": true
+    },
+    {
+        "sample_index": 150,
+        "actual_id": 16,
+        "actual_sign": "EAT1",
+        "predicted_id": 16,
+        "predicted_sign": "EAT1",
+        "confidence": 0.9228590726852417,
+        "confidence_percent": 92.28590726852417,
+        "correct": true
+    },
+    {
+        "sample_index": 151,
+        "actual_id": 15,
+        "actual_sign": "DINNER1",
+        "predicted_id": 11,
+        "predicted_sign": "RIVER1",
+        "confidence": 0.8551230430603027,
+        "confidence_percent": 85.51230430603027,
+        "correct": false
+    },
+    {
+        "sample_index": 152,
+        "actual_id": 19,
+        "actual_sign": "BASKETBALL1",
+        "predicted_id": 19,
+        "predicted_sign": "BASKETBALL1",
+        "confidence": 0.8522484302520752,
+        "confidence_percent": 85.22484302520752,
+        "correct": true
+    },
+    {
+        "sample_index": 153,
+        "actual_id": 9,
+        "actual_sign": "CHRISTMAS1",
+        "predicted_id": 5,
+        "predicted_sign": "PARTY1",
+        "confidence": 0.6315652132034302,
+        "confidence_percent": 63.15652132034302,
+        "correct": false
+    },
+    {
+        "sample_index": 154,
+        "actual_id": 6,
+        "actual_sign": "DEVELOP1",
+        "predicted_id": 19,
+        "predicted_sign": "BASKETBALL1",
+        "confidence": 0.4285085201263428,
+        "confidence_percent": 42.85085201263428,
+        "correct": false
+    },
+    {
+        "sample_index": 155,
+        "actual_id": 17,
+        "actual_sign": "MOVIE1",
+        "predicted_id": 17,
+        "predicted_sign": "MOVIE1",
+        "confidence": 0.9863560199737549,
+        "confidence_percent": 98.63560199737549,
+        "correct": true
+    },
+    {
+        "sample_index": 156,
+        "actual_id": 13,
+        "actual_sign": "HOSPITAL1",
+        "predicted_id": 13,
+        "predicted_sign": "HOSPITAL1",
+        "confidence": 0.9699613451957703,
+        "confidence_percent": 96.99613451957703,
+        "correct": true
+    },
+    {
+        "sample_index": 157,
+        "actual_id": 10,
+        "actual_sign": "HALLOWEEN1",
+        "predicted_id": 10,
+        "predicted_sign": "HALLOWEEN1",
+        "confidence": 0.918094277381897,
+        "confidence_percent": 91.8094277381897,
+        "correct": true
+    },
+    {
+        "sample_index": 158,
+        "actual_id": 1,
+        "actual_sign": "DOG1",
+        "predicted_id": 6,
+        "predicted_sign": "DEVELOP1",
+        "confidence": 0.7657079100608826,
+        "confidence_percent": 76.57079100608826,
+        "correct": false
+    },
+    {
+        "sample_index": 159,
+        "actual_id": 5,
+        "actual_sign": "PARTY1",
+        "predicted_id": 18,
+        "predicted_sign": "SINK",
+        "confidence": 0.9856982827186584,
+        "confidence_percent": 98.56982827186584,
+        "correct": false
+    },
+    {
+        "sample_index": 160,
+        "actual_id": 17,
+        "actual_sign": "MOVIE1",
+        "predicted_id": 17,
+        "predicted_sign": "MOVIE1",
+        "confidence": 0.9886261820793152,
+        "confidence_percent": 98.86261820793152,
+        "correct": true
+    },
+    {
+        "sample_index": 161,
+        "actual_id": 19,
+        "actual_sign": "BASKETBALL1",
+        "predicted_id": 6,
+        "predicted_sign": "DEVELOP1",
+        "confidence": 0.7253344655036926,
+        "confidence_percent": 72.53344655036926,
+        "correct": false
+    },
+    {
+        "sample_index": 162,
+        "actual_id": 6,
+        "actual_sign": "DEVELOP1",
+        "predicted_id": 6,
+        "predicted_sign": "DEVELOP1",
+        "confidence": 0.837989866733551,
+        "confidence_percent": 83.7989866733551,
+        "correct": true
+    },
+    {
+        "sample_index": 163,
+        "actual_id": 8,
+        "actual_sign": "FINE1",
+        "predicted_id": 8,
+        "predicted_sign": "FINE1",
+        "confidence": 0.9324242472648621,
+        "confidence_percent": 93.2424247264862,
+        "correct": true
+    },
+    {
+        "sample_index": 164,
+        "actual_id": 15,
+        "actual_sign": "DINNER1",
+        "predicted_id": 15,
+        "predicted_sign": "DINNER1",
+        "confidence": 0.985282301902771,
+        "confidence_percent": 98.5282301902771,
+        "correct": true
+    },
+    {
+        "sample_index": 165,
+        "actual_id": 6,
+        "actual_sign": "DEVELOP1",
+        "predicted_id": 6,
+        "predicted_sign": "DEVELOP1",
+        "confidence": 0.7469034790992737,
+        "confidence_percent": 74.69034790992737,
+        "correct": true
+    },
+    {
+        "sample_index": 166,
+        "actual_id": 8,
+        "actual_sign": "FINE1",
+        "predicted_id": 8,
+        "predicted_sign": "FINE1",
+        "confidence": 0.5409905910491943,
+        "confidence_percent": 54.099059104919434,
+        "correct": true
+    },
+    {
+        "sample_index": 167,
+        "actual_id": 9,
+        "actual_sign": "CHRISTMAS1",
+        "predicted_id": 7,
+        "predicted_sign": "BEE1",
+        "confidence": 0.9342729449272156,
+        "confidence_percent": 93.42729449272156,
+        "correct": false
+    },
+    {
+        "sample_index": 168,
+        "actual_id": 1,
+        "actual_sign": "DOG1",
+        "predicted_id": 18,
+        "predicted_sign": "SINK",
+        "confidence": 0.9708024859428406,
+        "confidence_percent": 97.08024859428406,
+        "correct": false
+    },
+    {
+        "sample_index": 169,
+        "actual_id": 16,
+        "actual_sign": "EAT1",
+        "predicted_id": 16,
+        "predicted_sign": "EAT1",
+        "confidence": 0.8595177531242371,
+        "confidence_percent": 85.9517753124237,
+        "correct": true
+    },
+    {
+        "sample_index": 170,
+        "actual_id": 1,
+        "actual_sign": "DOG1",
+        "predicted_id": 1,
+        "predicted_sign": "DOG1",
+        "confidence": 0.7449160218238831,
+        "confidence_percent": 74.4916021823883,
+        "correct": true
+    },
+    {
+        "sample_index": 171,
+        "actual_id": 10,
+        "actual_sign": "HALLOWEEN1",
+        "predicted_id": 10,
+        "predicted_sign": "HALLOWEEN1",
+        "confidence": 0.9855052828788757,
+        "confidence_percent": 98.55052828788757,
+        "correct": true
+    },
+    {
+        "sample_index": 172,
+        "actual_id": 19,
+        "actual_sign": "BASKETBALL1",
+        "predicted_id": 19,
+        "predicted_sign": "BASKETBALL1",
+        "confidence": 0.5289981365203857,
+        "confidence_percent": 52.899813652038574,
+        "correct": true
+    },
+    {
+        "sample_index": 173,
+        "actual_id": 9,
+        "actual_sign": "CHRISTMAS1",
+        "predicted_id": 7,
+        "predicted_sign": "BEE1",
+        "confidence": 0.9187726378440857,
+        "confidence_percent": 91.87726378440857,
+        "correct": false
+    },
+    {
+        "sample_index": 174,
+        "actual_id": 17,
+        "actual_sign": "MOVIE1",
+        "predicted_id": 17,
+        "predicted_sign": "MOVIE1",
+        "confidence": 0.9886161684989929,
+        "confidence_percent": 98.86161684989929,
+        "correct": true
+    },
+    {
+        "sample_index": 175,
+        "actual_id": 8,
+        "actual_sign": "FINE1",
+        "predicted_id": 9,
+        "predicted_sign": "CHRISTMAS1",
+        "confidence": 0.4726937711238861,
+        "confidence_percent": 47.26937711238861,
+        "correct": false
+    },
+    {
+        "sample_index": 176,
+        "actual_id": 2,
+        "actual_sign": "BREAKFAST1",
+        "predicted_id": 3,
+        "predicted_sign": "DARK1",
+        "confidence": 0.9690626859664917,
+        "confidence_percent": 96.90626859664917,
+        "correct": false
+    },
+    {
+        "sample_index": 177,
+        "actual_id": 15,
+        "actual_sign": "DINNER1",
+        "predicted_id": 16,
+        "predicted_sign": "EAT1",
+        "confidence": 0.9022462368011475,
+        "confidence_percent": 90.22462368011475,
+        "correct": false
+    },
+    {
+        "sample_index": 178,
+        "actual_id": 16,
+        "actual_sign": "EAT1",
+        "predicted_id": 16,
+        "predicted_sign": "EAT1",
+        "confidence": 0.8731175065040588,
+        "confidence_percent": 87.31175065040588,
+        "correct": true
+    },
+    {
+        "sample_index": 179,
+        "actual_id": 17,
+        "actual_sign": "MOVIE1",
+        "predicted_id": 18,
+        "predicted_sign": "SINK",
+        "confidence": 0.8707542419433594,
+        "confidence_percent": 87.07542419433594,
+        "correct": false
+    },
+    {
+        "sample_index": 180,
+        "actual_id": 1,
+        "actual_sign": "DOG1",
+        "predicted_id": 1,
+        "predicted_sign": "DOG1",
+        "confidence": 0.9869039058685303,
+        "confidence_percent": 98.69039058685303,
+        "correct": true
+    },
+    {
+        "sample_index": 181,
+        "actual_id": 19,
+        "actual_sign": "BASKETBALL1",
+        "predicted_id": 18,
+        "predicted_sign": "SINK",
+        "confidence": 0.8796835541725159,
+        "confidence_percent": 87.96835541725159,
+        "correct": false
+    },
+    {
+        "sample_index": 182,
+        "actual_id": 7,
+        "actual_sign": "BEE1",
+        "predicted_id": 7,
+        "predicted_sign": "BEE1",
+        "confidence": 0.9372645020484924,
+        "confidence_percent": 93.72645020484924,
+        "correct": true
+    },
+    {
+        "sample_index": 183,
+        "actual_id": 18,
+        "actual_sign": "SINK",
+        "predicted_id": 0,
+        "predicted_sign": "APPLE",
+        "confidence": 0.23613443970680237,
+        "confidence_percent": 23.613443970680237,
+        "correct": false
+    },
+    {
+        "sample_index": 184,
+        "actual_id": 8,
+        "actual_sign": "FINE1",
+        "predicted_id": 8,
+        "predicted_sign": "FINE1",
+        "confidence": 0.839694082736969,
+        "confidence_percent": 83.9694082736969,
+        "correct": true
+    },
+    {
+        "sample_index": 185,
+        "actual_id": 16,
+        "actual_sign": "EAT1",
+        "predicted_id": 16,
+        "predicted_sign": "EAT1",
+        "confidence": 0.8809910416603088,
+        "confidence_percent": 88.09910416603088,
+        "correct": true
+    },
+    {
+        "sample_index": 186,
+        "actual_id": 7,
+        "actual_sign": "BEE1",
+        "predicted_id": 7,
+        "predicted_sign": "BEE1",
+        "confidence": 0.560583770275116,
+        "confidence_percent": 56.0583770275116,
+        "correct": true
+    },
+    {
+        "sample_index": 187,
+        "actual_id": 17,
+        "actual_sign": "MOVIE1",
+        "predicted_id": 17,
+        "predicted_sign": "MOVIE1",
+        "confidence": 0.9747358560562134,
+        "confidence_percent": 97.47358560562134,
+        "correct": true
+    },
+    {
+        "sample_index": 188,
+        "actual_id": 13,
+        "actual_sign": "HOSPITAL1",
+        "predicted_id": 12,
+        "predicted_sign": "LUNCH1",
+        "confidence": 0.7478270530700684,
+        "confidence_percent": 74.78270530700684,
+        "correct": false
+    },
+    {
+        "sample_index": 189,
+        "actual_id": 11,
+        "actual_sign": "RIVER1",
+        "predicted_id": 18,
+        "predicted_sign": "SINK",
+        "confidence": 0.9620425701141357,
+        "confidence_percent": 96.20425701141357,
+        "correct": false
+    },
+    {
+        "sample_index": 190,
+        "actual_id": 11,
+        "actual_sign": "RIVER1",
+        "predicted_id": 3,
+        "predicted_sign": "DARK1",
+        "confidence": 0.9973552227020264,
+        "confidence_percent": 99.73552227020264,
+        "correct": false
+    },
+    {
+        "sample_index": 191,
+        "actual_id": 5,
+        "actual_sign": "PARTY1",
+        "predicted_id": 5,
+        "predicted_sign": "PARTY1",
+        "confidence": 0.9843020439147949,
+        "confidence_percent": 98.43020439147949,
+        "correct": true
+    },
+    {
+        "sample_index": 192,
+        "actual_id": 17,
+        "actual_sign": "MOVIE1",
+        "predicted_id": 17,
+        "predicted_sign": "MOVIE1",
+        "confidence": 0.9887619614601135,
+        "confidence_percent": 98.87619614601135,
+        "correct": true
+    },
+    {
+        "sample_index": 193,
+        "actual_id": 0,
+        "actual_sign": "APPLE",
+        "predicted_id": 0,
+        "predicted_sign": "APPLE",
+        "confidence": 0.9057782292366028,
+        "confidence_percent": 90.57782292366028,
+        "correct": true
+    },
+    {
+        "sample_index": 194,
+        "actual_id": 5,
+        "actual_sign": "PARTY1",
+        "predicted_id": 10,
+        "predicted_sign": "HALLOWEEN1",
+        "confidence": 0.779653787612915,
+        "confidence_percent": 77.9653787612915,
+        "correct": false
+    },
+    {
+        "sample_index": 195,
+        "actual_id": 12,
+        "actual_sign": "LUNCH1",
+        "predicted_id": 12,
+        "predicted_sign": "LUNCH1",
+        "confidence": 0.9499680399894714,
+        "confidence_percent": 94.99680399894714,
+        "correct": true
+    },
+    {
+        "sample_index": 196,
+        "actual_id": 16,
+        "actual_sign": "EAT1",
+        "predicted_id": 16,
+        "predicted_sign": "EAT1",
+        "confidence": 0.9153781533241272,
+        "confidence_percent": 91.53781533241272,
+        "correct": true
+    },
+    {
+        "sample_index": 197,
+        "actual_id": 14,
+        "actual_sign": "MEAT1",
+        "predicted_id": 5,
+        "predicted_sign": "PARTY1",
+        "confidence": 0.7436697483062744,
+        "confidence_percent": 74.36697483062744,
+        "correct": false
+    },
+    {
+        "sample_index": 198,
+        "actual_id": 19,
+        "actual_sign": "BASKETBALL1",
+        "predicted_id": 6,
+        "predicted_sign": "DEVELOP1",
+        "confidence": 0.5015035271644592,
+        "confidence_percent": 50.15035271644592,
+        "correct": false
+    },
+    {
+        "sample_index": 199,
+        "actual_id": 8,
+        "actual_sign": "FINE1",
+        "predicted_id": 8,
+        "predicted_sign": "FINE1",
+        "confidence": 0.8876460194587708,
+        "confidence_percent": 88.76460194587708,
+        "correct": true
+    },
+    {
+        "sample_index": 200,
+        "actual_id": 6,
+        "actual_sign": "DEVELOP1",
+        "predicted_id": 6,
+        "predicted_sign": "DEVELOP1",
+        "confidence": 0.8055209517478943,
+        "confidence_percent": 80.55209517478943,
+        "correct": true
+    },
+    {
+        "sample_index": 201,
+        "actual_id": 3,
+        "actual_sign": "DARK1",
+        "predicted_id": 3,
+        "predicted_sign": "DARK1",
+        "confidence": 0.9988054037094116,
+        "confidence_percent": 99.88054037094116,
+        "correct": true
+    },
+    {
+        "sample_index": 202,
+        "actual_id": 6,
+        "actual_sign": "DEVELOP1",
+        "predicted_id": 6,
+        "predicted_sign": "DEVELOP1",
+        "confidence": 0.7693259119987488,
+        "confidence_percent": 76.93259119987488,
+        "correct": true
+    },
+    {
+        "sample_index": 203,
+        "actual_id": 18,
+        "actual_sign": "SINK",
+        "predicted_id": 1,
+        "predicted_sign": "DOG1",
+        "confidence": 0.5459105372428894,
+        "confidence_percent": 54.59105372428894,
+        "correct": false
+    },
+    {
+        "sample_index": 204,
+        "actual_id": 7,
+        "actual_sign": "BEE1",
+        "predicted_id": 7,
+        "predicted_sign": "BEE1",
+        "confidence": 0.9180358052253723,
+        "confidence_percent": 91.80358052253723,
+        "correct": true
+    },
+    {
+        "sample_index": 205,
+        "actual_id": 1,
+        "actual_sign": "DOG1",
+        "predicted_id": 4,
+        "predicted_sign": "DEAF1",
+        "confidence": 0.46056628227233887,
+        "confidence_percent": 46.05662822723389,
+        "correct": false
+    },
+    {
+        "sample_index": 206,
+        "actual_id": 3,
+        "actual_sign": "DARK1",
+        "predicted_id": 3,
+        "predicted_sign": "DARK1",
+        "confidence": 0.9987694621086121,
+        "confidence_percent": 99.8769462108612,
+        "correct": true
+    },
+    {
+        "sample_index": 207,
+        "actual_id": 8,
+        "actual_sign": "FINE1",
+        "predicted_id": 9,
+        "predicted_sign": "CHRISTMAS1",
+        "confidence": 0.6937960386276245,
+        "confidence_percent": 69.37960386276245,
+        "correct": false
+    },
+    {
+        "sample_index": 208,
+        "actual_id": 15,
+        "actual_sign": "DINNER1",
+        "predicted_id": 0,
+        "predicted_sign": "APPLE",
+        "confidence": 0.850418746471405,
+        "confidence_percent": 85.0418746471405,
+        "correct": false
+    },
+    {
+        "sample_index": 209,
+        "actual_id": 10,
+        "actual_sign": "HALLOWEEN1",
+        "predicted_id": 10,
+        "predicted_sign": "HALLOWEEN1",
+        "confidence": 0.9842342734336853,
+        "confidence_percent": 98.42342734336853,
+        "correct": true
+    },
+    {
+        "sample_index": 210,
+        "actual_id": 6,
+        "actual_sign": "DEVELOP1",
+        "predicted_id": 6,
+        "predicted_sign": "DEVELOP1",
+        "confidence": 0.8273130655288696,
+        "confidence_percent": 82.73130655288696,
+        "correct": true
+    },
+    {
+        "sample_index": 211,
+        "actual_id": 2,
+        "actual_sign": "BREAKFAST1",
+        "predicted_id": 9,
+        "predicted_sign": "CHRISTMAS1",
+        "confidence": 0.37895745038986206,
+        "confidence_percent": 37.895745038986206,
+        "correct": false
+    },
+    {
+        "sample_index": 212,
+        "actual_id": 19,
+        "actual_sign": "BASKETBALL1",
+        "predicted_id": 6,
+        "predicted_sign": "DEVELOP1",
+        "confidence": 0.5542334914207458,
+        "confidence_percent": 55.423349142074585,
+        "correct": false
+    },
+    {
+        "sample_index": 213,
+        "actual_id": 5,
+        "actual_sign": "PARTY1",
+        "predicted_id": 5,
+        "predicted_sign": "PARTY1",
+        "confidence": 0.9905407428741455,
+        "confidence_percent": 99.05407428741455,
+        "correct": true
+    },
+    {
+        "sample_index": 214,
+        "actual_id": 12,
+        "actual_sign": "LUNCH1",
+        "predicted_id": 12,
+        "predicted_sign": "LUNCH1",
+        "confidence": 0.5073537230491638,
+        "confidence_percent": 50.73537230491638,
+        "correct": true
+    },
+    {
+        "sample_index": 215,
+        "actual_id": 15,
+        "actual_sign": "DINNER1",
+        "predicted_id": 11,
+        "predicted_sign": "RIVER1",
+        "confidence": 0.8782012462615967,
+        "confidence_percent": 87.82012462615967,
+        "correct": false
+    },
+    {
+        "sample_index": 216,
+        "actual_id": 13,
+        "actual_sign": "HOSPITAL1",
+        "predicted_id": 4,
+        "predicted_sign": "DEAF1",
+        "confidence": 0.4981287717819214,
+        "confidence_percent": 49.81287717819214,
+        "correct": false
+    },
+    {
+        "sample_index": 217,
+        "actual_id": 15,
+        "actual_sign": "DINNER1",
+        "predicted_id": 14,
+        "predicted_sign": "MEAT1",
+        "confidence": 0.6149746775627136,
+        "confidence_percent": 61.49746775627136,
+        "correct": false
+    },
+    {
+        "sample_index": 218,
+        "actual_id": 16,
+        "actual_sign": "EAT1",
+        "predicted_id": 16,
+        "predicted_sign": "EAT1",
+        "confidence": 0.904252827167511,
+        "confidence_percent": 90.4252827167511,
+        "correct": true
+    },
+    {
+        "sample_index": 219,
+        "actual_id": 12,
+        "actual_sign": "LUNCH1",
+        "predicted_id": 4,
+        "predicted_sign": "DEAF1",
+        "confidence": 0.906807005405426,
+        "confidence_percent": 90.6807005405426,
+        "correct": false
+    },
+    {
+        "sample_index": 220,
+        "actual_id": 4,
+        "actual_sign": "DEAF1",
+        "predicted_id": 4,
+        "predicted_sign": "DEAF1",
+        "confidence": 0.8872408866882324,
+        "confidence_percent": 88.72408866882324,
+        "correct": true
+    },
+    {
+        "sample_index": 221,
+        "actual_id": 10,
+        "actual_sign": "HALLOWEEN1",
+        "predicted_id": 10,
+        "predicted_sign": "HALLOWEEN1",
+        "confidence": 0.8275664448738098,
+        "confidence_percent": 82.75664448738098,
+        "correct": true
+    },
+    {
+        "sample_index": 222,
+        "actual_id": 14,
+        "actual_sign": "MEAT1",
+        "predicted_id": 14,
+        "predicted_sign": "MEAT1",
+        "confidence": 0.9881899356842041,
+        "confidence_percent": 98.81899356842041,
+        "correct": true
+    },
+    {
+        "sample_index": 223,
+        "actual_id": 7,
+        "actual_sign": "BEE1",
+        "predicted_id": 7,
+        "predicted_sign": "BEE1",
+        "confidence": 0.9260220527648926,
+        "confidence_percent": 92.60220527648926,
+        "correct": true
+    },
+    {
+        "sample_index": 224,
+        "actual_id": 8,
+        "actual_sign": "FINE1",
+        "predicted_id": 8,
+        "predicted_sign": "FINE1",
+        "confidence": 0.9350674748420715,
+        "confidence_percent": 93.50674748420715,
+        "correct": true
+    },
+    {
+        "sample_index": 225,
+        "actual_id": 16,
+        "actual_sign": "EAT1",
+        "predicted_id": 16,
+        "predicted_sign": "EAT1",
+        "confidence": 0.9106991291046143,
+        "confidence_percent": 91.06991291046143,
+        "correct": true
+    },
+    {
+        "sample_index": 226,
+        "actual_id": 4,
+        "actual_sign": "DEAF1",
+        "predicted_id": 4,
+        "predicted_sign": "DEAF1",
+        "confidence": 0.9268873929977417,
+        "confidence_percent": 92.68873929977417,
+        "correct": true
+    },
+    {
+        "sample_index": 227,
+        "actual_id": 13,
+        "actual_sign": "HOSPITAL1",
+        "predicted_id": 13,
+        "predicted_sign": "HOSPITAL1",
+        "confidence": 0.6158916354179382,
+        "confidence_percent": 61.58916354179382,
+        "correct": true
+    },
+    {
+        "sample_index": 228,
+        "actual_id": 16,
+        "actual_sign": "EAT1",
+        "predicted_id": 16,
+        "predicted_sign": "EAT1",
+        "confidence": 0.7223473787307739,
+        "confidence_percent": 72.23473787307739,
+        "correct": true
+    },
+    {
+        "sample_index": 229,
+        "actual_id": 8,
+        "actual_sign": "FINE1",
+        "predicted_id": 8,
+        "predicted_sign": "FINE1",
+        "confidence": 0.9334155321121216,
+        "confidence_percent": 93.34155321121216,
+        "correct": true
+    },
+    {
+        "sample_index": 230,
+        "actual_id": 9,
+        "actual_sign": "CHRISTMAS1",
+        "predicted_id": 9,
+        "predicted_sign": "CHRISTMAS1",
+        "confidence": 0.5500965118408203,
+        "confidence_percent": 55.00965118408203,
+        "correct": true
+    },
+    {
+        "sample_index": 231,
+        "actual_id": 0,
+        "actual_sign": "APPLE",
+        "predicted_id": 0,
+        "predicted_sign": "APPLE",
+        "confidence": 0.9242732524871826,
+        "confidence_percent": 92.42732524871826,
+        "correct": true
+    },
+    {
+        "sample_index": 232,
+        "actual_id": 16,
+        "actual_sign": "EAT1",
+        "predicted_id": 12,
+        "predicted_sign": "LUNCH1",
+        "confidence": 0.7514586448669434,
+        "confidence_percent": 75.14586448669434,
+        "correct": false
+    },
+    {
+        "sample_index": 233,
+        "actual_id": 13,
+        "actual_sign": "HOSPITAL1",
+        "predicted_id": 13,
+        "predicted_sign": "HOSPITAL1",
+        "confidence": 0.9630662798881531,
+        "confidence_percent": 96.30662798881531,
+        "correct": true
+    },
+    {
+        "sample_index": 234,
+        "actual_id": 10,
+        "actual_sign": "HALLOWEEN1",
+        "predicted_id": 10,
+        "predicted_sign": "HALLOWEEN1",
+        "confidence": 0.982987642288208,
+        "confidence_percent": 98.2987642288208,
+        "correct": true
+    },
+    {
+        "sample_index": 235,
+        "actual_id": 5,
+        "actual_sign": "PARTY1",
+        "predicted_id": 5,
+        "predicted_sign": "PARTY1",
+        "confidence": 0.9911231994628906,
+        "confidence_percent": 99.11231994628906,
+        "correct": true
+    },
+    {
+        "sample_index": 236,
+        "actual_id": 11,
+        "actual_sign": "RIVER1",
+        "predicted_id": 11,
+        "predicted_sign": "RIVER1",
+        "confidence": 0.8515245914459229,
+        "confidence_percent": 85.15245914459229,
+        "correct": true
+    },
+    {
+        "sample_index": 237,
+        "actual_id": 17,
+        "actual_sign": "MOVIE1",
+        "predicted_id": 17,
+        "predicted_sign": "MOVIE1",
+        "confidence": 0.9880703687667847,
+        "confidence_percent": 98.80703687667847,
+        "correct": true
+    },
+    {
+        "sample_index": 238,
+        "actual_id": 7,
+        "actual_sign": "BEE1",
+        "predicted_id": 9,
+        "predicted_sign": "CHRISTMAS1",
+        "confidence": 0.42864471673965454,
+        "confidence_percent": 42.864471673965454,
+        "correct": false
+    },
+    {
+        "sample_index": 239,
+        "actual_id": 17,
+        "actual_sign": "MOVIE1",
+        "predicted_id": 6,
+        "predicted_sign": "DEVELOP1",
+        "confidence": 0.7593565583229065,
+        "confidence_percent": 75.93565583229065,
+        "correct": false
+    },
+    {
+        "sample_index": 240,
+        "actual_id": 17,
+        "actual_sign": "MOVIE1",
+        "predicted_id": 17,
+        "predicted_sign": "MOVIE1",
+        "confidence": 0.9863596558570862,
+        "confidence_percent": 98.63596558570862,
+        "correct": true
+    },
+    {
+        "sample_index": 241,
+        "actual_id": 4,
+        "actual_sign": "DEAF1",
+        "predicted_id": 11,
+        "predicted_sign": "RIVER1",
+        "confidence": 0.7639442682266235,
+        "confidence_percent": 76.39442682266235,
+        "correct": false
+    },
+    {
+        "sample_index": 242,
+        "actual_id": 0,
+        "actual_sign": "APPLE",
+        "predicted_id": 0,
+        "predicted_sign": "APPLE",
+        "confidence": 0.8979799151420593,
+        "confidence_percent": 89.79799151420593,
+        "correct": true
+    },
+    {
+        "sample_index": 243,
+        "actual_id": 9,
+        "actual_sign": "CHRISTMAS1",
+        "predicted_id": 13,
+        "predicted_sign": "HOSPITAL1",
+        "confidence": 0.5276909470558167,
+        "confidence_percent": 52.769094705581665,
+        "correct": false
+    },
+    {
+        "sample_index": 244,
+        "actual_id": 19,
+        "actual_sign": "BASKETBALL1",
+        "predicted_id": 19,
+        "predicted_sign": "BASKETBALL1",
+        "confidence": 0.5785059928894043,
+        "confidence_percent": 57.85059928894043,
+        "correct": true
+    },
+    {
+        "sample_index": 245,
+        "actual_id": 13,
+        "actual_sign": "HOSPITAL1",
+        "predicted_id": 13,
+        "predicted_sign": "HOSPITAL1",
+        "confidence": 0.9724658131599426,
+        "confidence_percent": 97.24658131599426,
+        "correct": true
+    },
+    {
+        "sample_index": 246,
+        "actual_id": 10,
+        "actual_sign": "HALLOWEEN1",
+        "predicted_id": 10,
+        "predicted_sign": "HALLOWEEN1",
+        "confidence": 0.9852187037467957,
+        "confidence_percent": 98.52187037467957,
+        "correct": true
+    },
+    {
+        "sample_index": 247,
+        "actual_id": 8,
+        "actual_sign": "FINE1",
+        "predicted_id": 8,
+        "predicted_sign": "FINE1",
+        "confidence": 0.926523745059967,
+        "confidence_percent": 92.6523745059967,
+        "correct": true
+    },
+    {
+        "sample_index": 248,
+        "actual_id": 11,
+        "actual_sign": "RIVER1",
+        "predicted_id": 4,
+        "predicted_sign": "DEAF1",
+        "confidence": 0.603789210319519,
+        "confidence_percent": 60.378921031951904,
+        "correct": false
+    },
+    {
+        "sample_index": 249,
+        "actual_id": 18,
+        "actual_sign": "SINK",
+        "predicted_id": 1,
+        "predicted_sign": "DOG1",
+        "confidence": 0.4918431341648102,
+        "confidence_percent": 49.18431341648102,
+        "correct": false
+    },
+    {
+        "sample_index": 250,
+        "actual_id": 17,
+        "actual_sign": "MOVIE1",
+        "predicted_id": 18,
+        "predicted_sign": "SINK",
+        "confidence": 0.9718043208122253,
+        "confidence_percent": 97.18043208122253,
+        "correct": false
+    },
+    {
+        "sample_index": 251,
+        "actual_id": 19,
+        "actual_sign": "BASKETBALL1",
+        "predicted_id": 19,
+        "predicted_sign": "BASKETBALL1",
+        "confidence": 0.49960431456565857,
+        "confidence_percent": 49.96043145656586,
+        "correct": true
+    },
+    {
+        "sample_index": 252,
+        "actual_id": 2,
+        "actual_sign": "BREAKFAST1",
+        "predicted_id": 2,
+        "predicted_sign": "BREAKFAST1",
+        "confidence": 0.3913724422454834,
+        "confidence_percent": 39.13724422454834,
+        "correct": true
+    },
+    {
+        "sample_index": 253,
+        "actual_id": 1,
+        "actual_sign": "DOG1",
+        "predicted_id": 7,
+        "predicted_sign": "BEE1",
+        "confidence": 0.33114004135131836,
+        "confidence_percent": 33.114004135131836,
+        "correct": false
+    },
+    {
+        "sample_index": 254,
+        "actual_id": 11,
+        "actual_sign": "RIVER1",
+        "predicted_id": 11,
+        "predicted_sign": "RIVER1",
+        "confidence": 0.5803260803222656,
+        "confidence_percent": 58.03260803222656,
+        "correct": true
+    },
+    {
+        "sample_index": 255,
+        "actual_id": 9,
+        "actual_sign": "CHRISTMAS1",
+        "predicted_id": 9,
+        "predicted_sign": "CHRISTMAS1",
+        "confidence": 0.9727357029914856,
+        "confidence_percent": 97.27357029914856,
+        "correct": true
+    },
+    {
+        "sample_index": 256,
+        "actual_id": 7,
+        "actual_sign": "BEE1",
+        "predicted_id": 4,
+        "predicted_sign": "DEAF1",
+        "confidence": 0.48472073674201965,
+        "confidence_percent": 48.472073674201965,
+        "correct": false
+    },
+    {
+        "sample_index": 257,
+        "actual_id": 15,
+        "actual_sign": "DINNER1",
+        "predicted_id": 1,
+        "predicted_sign": "DOG1",
+        "confidence": 0.5665650367736816,
+        "confidence_percent": 56.656503677368164,
+        "correct": false
+    },
+    {
+        "sample_index": 258,
+        "actual_id": 5,
+        "actual_sign": "PARTY1",
+        "predicted_id": 5,
+        "predicted_sign": "PARTY1",
+        "confidence": 0.9878743290901184,
+        "confidence_percent": 98.78743290901184,
+        "correct": true
+    },
+    {
+        "sample_index": 259,
+        "actual_id": 4,
+        "actual_sign": "DEAF1",
+        "predicted_id": 4,
+        "predicted_sign": "DEAF1",
+        "confidence": 0.613040030002594,
+        "confidence_percent": 61.3040030002594,
+        "correct": true
+    },
+    {
+        "sample_index": 260,
+        "actual_id": 18,
+        "actual_sign": "SINK",
+        "predicted_id": 18,
+        "predicted_sign": "SINK",
+        "confidence": 0.9866369962692261,
+        "confidence_percent": 98.66369962692261,
+        "correct": true
+    },
+    {
+        "sample_index": 261,
+        "actual_id": 9,
+        "actual_sign": "CHRISTMAS1",
+        "predicted_id": 5,
+        "predicted_sign": "PARTY1",
+        "confidence": 0.5178079605102539,
+        "confidence_percent": 51.78079605102539,
+        "correct": false
+    },
+    {
+        "sample_index": 262,
+        "actual_id": 5,
+        "actual_sign": "PARTY1",
+        "predicted_id": 5,
+        "predicted_sign": "PARTY1",
+        "confidence": 0.9724777936935425,
+        "confidence_percent": 97.24777936935425,
+        "correct": true
+    },
+    {
+        "sample_index": 263,
+        "actual_id": 2,
+        "actual_sign": "BREAKFAST1",
+        "predicted_id": 7,
+        "predicted_sign": "BEE1",
+        "confidence": 0.4325519800186157,
+        "confidence_percent": 43.25519800186157,
+        "correct": false
+    },
+    {
+        "sample_index": 264,
+        "actual_id": 18,
+        "actual_sign": "SINK",
+        "predicted_id": 6,
+        "predicted_sign": "DEVELOP1",
+        "confidence": 0.8248746395111084,
+        "confidence_percent": 82.48746395111084,
+        "correct": false
+    },
+    {
+        "sample_index": 265,
+        "actual_id": 4,
+        "actual_sign": "DEAF1",
+        "predicted_id": 4,
+        "predicted_sign": "DEAF1",
+        "confidence": 0.5730604529380798,
+        "confidence_percent": 57.30604529380798,
+        "correct": true
+    },
+    {
+        "sample_index": 266,
+        "actual_id": 0,
+        "actual_sign": "APPLE",
+        "predicted_id": 0,
+        "predicted_sign": "APPLE",
+        "confidence": 0.9579809308052063,
+        "confidence_percent": 95.79809308052063,
+        "correct": true
+    },
+    {
+        "sample_index": 267,
+        "actual_id": 16,
+        "actual_sign": "EAT1",
+        "predicted_id": 16,
+        "predicted_sign": "EAT1",
+        "confidence": 0.9054427146911621,
+        "confidence_percent": 90.54427146911621,
+        "correct": true
+    },
+    {
+        "sample_index": 268,
+        "actual_id": 10,
+        "actual_sign": "HALLOWEEN1",
+        "predicted_id": 10,
+        "predicted_sign": "HALLOWEEN1",
+        "confidence": 0.9833062291145325,
+        "confidence_percent": 98.33062291145325,
+        "correct": true
+    },
+    {
+        "sample_index": 269,
+        "actual_id": 6,
+        "actual_sign": "DEVELOP1",
+        "predicted_id": 19,
+        "predicted_sign": "BASKETBALL1",
+        "confidence": 0.5074805617332458,
+        "confidence_percent": 50.748056173324585,
+        "correct": false
+    },
+    {
+        "sample_index": 270,
+        "actual_id": 14,
+        "actual_sign": "MEAT1",
+        "predicted_id": 14,
+        "predicted_sign": "MEAT1",
+        "confidence": 0.5775208473205566,
+        "confidence_percent": 57.752084732055664,
+        "correct": true
+    },
+    {
+        "sample_index": 271,
+        "actual_id": 2,
+        "actual_sign": "BREAKFAST1",
+        "predicted_id": 9,
+        "predicted_sign": "CHRISTMAS1",
+        "confidence": 0.5159360766410828,
+        "confidence_percent": 51.593607664108276,
+        "correct": false
+    },
+    {
+        "sample_index": 272,
+        "actual_id": 5,
+        "actual_sign": "PARTY1",
+        "predicted_id": 5,
+        "predicted_sign": "PARTY1",
+        "confidence": 0.982890784740448,
+        "confidence_percent": 98.2890784740448,
+        "correct": true
+    },
+    {
+        "sample_index": 273,
+        "actual_id": 2,
+        "actual_sign": "BREAKFAST1",
+        "predicted_id": 1,
+        "predicted_sign": "DOG1",
+        "confidence": 0.5488779544830322,
+        "confidence_percent": 54.88779544830322,
+        "correct": false
+    },
+    {
+        "sample_index": 274,
+        "actual_id": 19,
+        "actual_sign": "BASKETBALL1",
+        "predicted_id": 6,
+        "predicted_sign": "DEVELOP1",
+        "confidence": 0.49174314737319946,
+        "confidence_percent": 49.174314737319946,
+        "correct": false
+    },
+    {
+        "sample_index": 275,
+        "actual_id": 12,
+        "actual_sign": "LUNCH1",
+        "predicted_id": 16,
+        "predicted_sign": "EAT1",
+        "confidence": 0.2271803766489029,
+        "confidence_percent": 22.71803766489029,
+        "correct": false
+    },
+    {
+        "sample_index": 276,
+        "actual_id": 5,
+        "actual_sign": "PARTY1",
+        "predicted_id": 10,
+        "predicted_sign": "HALLOWEEN1",
+        "confidence": 0.8630763292312622,
+        "confidence_percent": 86.30763292312622,
+        "correct": false
+    },
+    {
+        "sample_index": 277,
+        "actual_id": 2,
+        "actual_sign": "BREAKFAST1",
+        "predicted_id": 9,
+        "predicted_sign": "CHRISTMAS1",
+        "confidence": 0.4244651794433594,
+        "confidence_percent": 42.44651794433594,
+        "correct": false
+    },
+    {
+        "sample_index": 278,
+        "actual_id": 1,
+        "actual_sign": "DOG1",
+        "predicted_id": 1,
+        "predicted_sign": "DOG1",
+        "confidence": 0.9794886112213135,
+        "confidence_percent": 97.94886112213135,
+        "correct": true
+    },
+    {
+        "sample_index": 279,
+        "actual_id": 19,
+        "actual_sign": "BASKETBALL1",
+        "predicted_id": 19,
+        "predicted_sign": "BASKETBALL1",
+        "confidence": 0.5032289028167725,
+        "confidence_percent": 50.322890281677246,
+        "correct": true
+    },
+    {
+        "sample_index": 280,
+        "actual_id": 2,
+        "actual_sign": "BREAKFAST1",
+        "predicted_id": 7,
+        "predicted_sign": "BEE1",
+        "confidence": 0.5134475827217102,
+        "confidence_percent": 51.34475827217102,
+        "correct": false
+    },
+    {
+        "sample_index": 281,
+        "actual_id": 12,
+        "actual_sign": "LUNCH1",
+        "predicted_id": 12,
+        "predicted_sign": "LUNCH1",
+        "confidence": 0.8862687349319458,
+        "confidence_percent": 88.62687349319458,
+        "correct": true
+    },
+    {
+        "sample_index": 282,
+        "actual_id": 4,
+        "actual_sign": "DEAF1",
+        "predicted_id": 12,
+        "predicted_sign": "LUNCH1",
+        "confidence": 0.43634578585624695,
+        "confidence_percent": 43.634578585624695,
+        "correct": false
+    },
+    {
+        "sample_index": 283,
+        "actual_id": 10,
+        "actual_sign": "HALLOWEEN1",
+        "predicted_id": 10,
+        "predicted_sign": "HALLOWEEN1",
+        "confidence": 0.987334132194519,
+        "confidence_percent": 98.7334132194519,
+        "correct": true
+    },
+    {
+        "sample_index": 284,
+        "actual_id": 9,
+        "actual_sign": "CHRISTMAS1",
+        "predicted_id": 9,
+        "predicted_sign": "CHRISTMAS1",
+        "confidence": 0.9741344451904297,
+        "confidence_percent": 97.41344451904297,
+        "correct": true
+    },
+    {
+        "sample_index": 285,
+        "actual_id": 9,
+        "actual_sign": "CHRISTMAS1",
+        "predicted_id": 9,
+        "predicted_sign": "CHRISTMAS1",
+        "confidence": 0.9521085023880005,
+        "confidence_percent": 95.21085023880005,
+        "correct": true
+    },
+    {
+        "sample_index": 286,
+        "actual_id": 12,
+        "actual_sign": "LUNCH1",
+        "predicted_id": 9,
+        "predicted_sign": "CHRISTMAS1",
+        "confidence": 0.8990704417228699,
+        "confidence_percent": 89.90704417228699,
+        "correct": false
+    },
+    {
+        "sample_index": 287,
+        "actual_id": 18,
+        "actual_sign": "SINK",
+        "predicted_id": 18,
+        "predicted_sign": "SINK",
+        "confidence": 0.9713903069496155,
+        "confidence_percent": 97.13903069496155,
+        "correct": true
+    },
+    {
+        "sample_index": 288,
+        "actual_id": 8,
+        "actual_sign": "FINE1",
+        "predicted_id": 8,
+        "predicted_sign": "FINE1",
+        "confidence": 0.557512640953064,
+        "confidence_percent": 55.7512640953064,
+        "correct": true
+    },
+    {
+        "sample_index": 289,
+        "actual_id": 5,
+        "actual_sign": "PARTY1",
+        "predicted_id": 5,
+        "predicted_sign": "PARTY1",
+        "confidence": 0.972044825553894,
+        "confidence_percent": 97.2044825553894,
+        "correct": true
+    },
+    {
+        "sample_index": 290,
+        "actual_id": 19,
+        "actual_sign": "BASKETBALL1",
+        "predicted_id": 6,
+        "predicted_sign": "DEVELOP1",
+        "confidence": 0.8024317026138306,
+        "confidence_percent": 80.24317026138306,
+        "correct": false
+    },
+    {
+        "sample_index": 291,
+        "actual_id": 1,
+        "actual_sign": "DOG1",
+        "predicted_id": 1,
+        "predicted_sign": "DOG1",
+        "confidence": 0.9850954413414001,
+        "confidence_percent": 98.50954413414001,
+        "correct": true
+    },
+    {
+        "sample_index": 292,
+        "actual_id": 4,
+        "actual_sign": "DEAF1",
+        "predicted_id": 4,
+        "predicted_sign": "DEAF1",
+        "confidence": 0.5285266041755676,
+        "confidence_percent": 52.85266041755676,
+        "correct": true
+    },
+    {
+        "sample_index": 293,
+        "actual_id": 3,
+        "actual_sign": "DARK1",
+        "predicted_id": 3,
+        "predicted_sign": "DARK1",
+        "confidence": 0.6287117600440979,
+        "confidence_percent": 62.87117600440979,
+        "correct": true
+    },
+    {
+        "sample_index": 294,
+        "actual_id": 1,
+        "actual_sign": "DOG1",
+        "predicted_id": 1,
+        "predicted_sign": "DOG1",
+        "confidence": 0.9502705335617065,
+        "confidence_percent": 95.02705335617065,
+        "correct": true
+    },
+    {
+        "sample_index": 295,
+        "actual_id": 12,
+        "actual_sign": "LUNCH1",
+        "predicted_id": 12,
+        "predicted_sign": "LUNCH1",
+        "confidence": 0.42457571625709534,
+        "confidence_percent": 42.457571625709534,
+        "correct": true
+    },
+    {
+        "sample_index": 296,
+        "actual_id": 13,
+        "actual_sign": "HOSPITAL1",
+        "predicted_id": 13,
+        "predicted_sign": "HOSPITAL1",
+        "confidence": 0.9521061182022095,
+        "confidence_percent": 95.21061182022095,
+        "correct": true
+    },
+    {
+        "sample_index": 297,
+        "actual_id": 10,
+        "actual_sign": "HALLOWEEN1",
+        "predicted_id": 10,
+        "predicted_sign": "HALLOWEEN1",
+        "confidence": 0.9862505197525024,
+        "confidence_percent": 98.62505197525024,
+        "correct": true
+    }
+]
