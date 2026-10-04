@@ -3,8 +3,8 @@ streamlit==1.64.0
 streamlit-webrtc==0.78.1
 tensorflow==2.21.0
 mediapipe==1.0.1
-numpy==2.4.6
-opencv-contrib-python-headless==5.0.0.93
+numpy==2.2.6
+opencv-contrib-python-headless==4.11.0.86
 pandas==3.0.5
 Pillow==12.3.0
 av==17.1.0
