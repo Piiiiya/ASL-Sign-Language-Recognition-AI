@@ -5,6 +5,15 @@ An AI-powered application for recognizing isolated American Sign Language (ASL) 
 ## Project Overview
 
 Developed as part of an AI/ML internship project, this application uses MediaPipe to extract hand landmarks and an LSTM-based neural network to recognize selected ASL signs.
+## 🚀 Live Demo
+
+**Try the ASL Sign Language Recognition AI here:**
+
+👉 [Launch ASL Sign Language AI](https://asl-sign-language-recognition-ai-zgzbl2g4aeoqvv2hjscxvd.streamlit.app/)
+
+Explore the application to upload an ASL video and view sign predictions, confidence scores, and hand-detection diagnostics.
+
+
 
 ### Key Features
 
