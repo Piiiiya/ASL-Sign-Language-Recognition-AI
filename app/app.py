@@ -1,21 +1,13 @@
+
 import streamlit as st
 import cv2
 import json
 import numpy as np
 import mediapipe as mp
 import tensorflow as tf
-import av
-import threading
 
 from pathlib import Path
 from datetime import datetime
-from collections import deque, Counter
-
-from streamlit_webrtc import (
-    webrtc_streamer,
-    VideoProcessorBase,
-    RTCConfiguration,
-)
 
 
 # ============================================================
@@ -47,41 +39,15 @@ LABEL_PATH = (
 SEQUENCE_LENGTH = 30
 FEATURES = 126
 
-# Development:
 # True  = application works at any time
 # False = final submission works only 6 PM - 10 PM
 DEVELOPER_MODE = True
 
-# Minimum confidence required for a phrase word
-PHRASE_CONFIDENCE_THRESHOLD = 0.80
-
-# Number of stable predictions required before
-# adding a sign to the phrase.
-STABLE_PREDICTIONS_REQUIRED = 3
-
-# Same sign cannot be added again immediately.
-SAME_SIGN_COOLDOWN = 2.0
+MAX_VIDEO_FRAMES = 120
 
 
 # ============================================================
-# WEBRTC CONFIGURATION
-# ============================================================
-
-RTC_CONFIGURATION = RTCConfiguration(
-    {
-        "iceServers": [
-            {
-                "urls": [
-                    "stun:stun.l.google.com:19302"
-                ]
-            }
-        ]
-    }
-)
-
-
-# ============================================================
-# PAGE
+# PAGE CONFIGURATION
 # ============================================================
 
 st.set_page_config(
@@ -122,6 +88,11 @@ def is_operational_time():
 @st.cache_resource
 def load_model():
 
+    if not MODEL_PATH.exists():
+        raise FileNotFoundError(
+            f"Model not found: {MODEL_PATH}"
+        )
+
     return tf.keras.models.load_model(
         MODEL_PATH
     )
@@ -133,6 +104,11 @@ def load_model():
 
 @st.cache_resource
 def load_labels():
+
+    if not LABEL_PATH.exists():
+        raise FileNotFoundError(
+            f"Label mapping not found: {LABEL_PATH}"
+        )
 
     with open(
         LABEL_PATH,
@@ -154,29 +130,20 @@ def load_labels():
 
 def create_landmarker():
 
-    BaseOptions = mp.tasks.BaseOptions
+    if not LANDMARKER_PATH.exists():
+        raise FileNotFoundError(
+            f"MediaPipe task file not found: {LANDMARKER_PATH}"
+        )
 
-    HandLandmarker = (
-        mp.tasks.vision.HandLandmarker
-    )
+    options = mp.tasks.vision.HandLandmarkerOptions(
 
-    HandLandmarkerOptions = (
-        mp.tasks.vision.HandLandmarkerOptions
-    )
-
-    RunningMode = (
-        mp.tasks.vision.RunningMode
-    )
-
-    options = HandLandmarkerOptions(
-
-        base_options=BaseOptions(
+        base_options=mp.tasks.BaseOptions(
             model_asset_path=str(
                 LANDMARKER_PATH
             )
         ),
 
-        running_mode=RunningMode.IMAGE,
+        running_mode=mp.tasks.vision.RunningMode.IMAGE,
 
         num_hands=2,
 
@@ -188,7 +155,7 @@ def create_landmarker():
     )
 
     return (
-        HandLandmarker
+        mp.tasks.vision.HandLandmarker
         .create_from_options(options)
     )
 
@@ -243,18 +210,12 @@ def extract_features(result):
             if points.shape != (21, 3):
                 continue
 
-            # ------------------------------------------------
             # Normalize relative to wrist
-            # ------------------------------------------------
-
             wrist = points[0].copy()
 
             points = points - wrist
 
-            # ------------------------------------------------
             # Scale normalization
-            # ------------------------------------------------
-
             distances = np.linalg.norm(
                 points,
                 axis=1,
@@ -263,13 +224,9 @@ def extract_features(result):
             scale = np.max(distances)
 
             if scale > 1e-6:
-
                 points = points / scale
 
-            # ------------------------------------------------
             # Store according to handedness
-            # ------------------------------------------------
-
             if hand_type == "Left":
 
                 left = points
@@ -288,9 +245,7 @@ def extract_features(result):
     )
 
     return (
-        feature_vector.astype(
-            np.float32
-        ),
+        feature_vector.astype(np.float32),
         found_hand,
     )
 
@@ -349,472 +304,7 @@ def resample_sequence(
 
 
 # ============================================================
-# REAL-TIME VIDEO PROCESSOR
-# ============================================================
-
-class ASLVideoProcessor(VideoProcessorBase):
-
-    def __init__(self):
-
-        self.model = load_model()
-
-        self.id_to_label = load_labels()
-
-        self.landmarker = create_landmarker()
-
-        # ----------------------------------------------------
-        # Sequence buffer
-        # ----------------------------------------------------
-
-        self.sequence_buffer = deque(
-            maxlen=SEQUENCE_LENGTH
-        )
-
-        # ----------------------------------------------------
-        # Statistics
-        # ----------------------------------------------------
-
-        self.total_frames = 0
-        self.active_frames = 0
-
-        # ----------------------------------------------------
-        # Current prediction
-        # ----------------------------------------------------
-
-        self.prediction = "Waiting"
-        self.confidence = 0.0
-
-        self.top_predictions = []
-
-        # ----------------------------------------------------
-        # Prediction timing
-        # ----------------------------------------------------
-
-        self.prediction_countdown = 0
-
-        self.no_hand_frames = 0
-
-        # ----------------------------------------------------
-        # Stable prediction tracking
-        # ----------------------------------------------------
-
-        self.stable_label = None
-        self.stable_count = 0
-
-        # ----------------------------------------------------
-        # Phrase
-        # ----------------------------------------------------
-
-        self.phrase = []
-
-        self.last_added_sign = None
-        self.last_added_time = 0.0
-
-        # ----------------------------------------------------
-        # Thread safety
-        # ----------------------------------------------------
-
-        self.lock = threading.Lock()
-
-    # ========================================================
-    # ADD SIGN TO PHRASE
-    # ========================================================
-
-    def add_to_phrase(
-        self,
-        label,
-        confidence,
-    ):
-
-        if confidence < PHRASE_CONFIDENCE_THRESHOLD:
-            return
-
-        if label == "UNKNOWN":
-            return
-
-        current_time = datetime.now().timestamp()
-
-        # ----------------------------------------------------
-        # Stable prediction
-        # ----------------------------------------------------
-
-        if label == self.stable_label:
-
-            self.stable_count += 1
-
-        else:
-
-            self.stable_label = label
-            self.stable_count = 1
-
-        # ----------------------------------------------------
-        # Require multiple consecutive predictions
-        # ----------------------------------------------------
-
-        if (
-            self.stable_count
-            < STABLE_PREDICTIONS_REQUIRED
-        ):
-
-            return
-
-        # ----------------------------------------------------
-        # Prevent immediate duplicate
-        # ----------------------------------------------------
-
-        if (
-            label == self.last_added_sign
-            and
-            current_time - self.last_added_time
-            < SAME_SIGN_COOLDOWN
-        ):
-
-            return
-
-        # ----------------------------------------------------
-        # Add sign
-        # ----------------------------------------------------
-
-        self.phrase.append(label)
-
-        self.last_added_sign = label
-
-        self.last_added_time = current_time
-
-        # Reset stability after adding
-        self.stable_count = 0
-
-    # ========================================================
-    # PROCESS FRAME
-    # ========================================================
-
-    def recv(self, frame):
-
-        img = frame.to_ndarray(
-            format="bgr24"
-        )
-
-        self.total_frames += 1
-
-        # ----------------------------------------------------
-        # BGR -> RGB
-        # ----------------------------------------------------
-
-        rgb = cv2.cvtColor(
-            img,
-            cv2.COLOR_BGR2RGB,
-        )
-
-        mp_image = mp.Image(
-            image_format=mp.ImageFormat.SRGB,
-            data=rgb,
-        )
-
-        # ----------------------------------------------------
-        # MediaPipe
-        # ----------------------------------------------------
-
-        try:
-
-            result = self.landmarker.detect(
-                mp_image
-            )
-
-        except Exception:
-
-            return av.VideoFrame.from_ndarray(
-                img,
-                format="bgr24",
-            )
-
-        # ----------------------------------------------------
-        # Extract features
-        # ----------------------------------------------------
-
-        features, found_hand = (
-            extract_features(result)
-        )
-
-        # ====================================================
-        # HAND FOUND
-        # ====================================================
-
-        if found_hand:
-
-            self.active_frames += 1
-
-            self.no_hand_frames = 0
-
-            self.sequence_buffer.append(
-                features
-            )
-
-        # ====================================================
-        # NO HAND
-        # ====================================================
-
-        else:
-
-            self.no_hand_frames += 1
-
-        # ====================================================
-        # PREDICTION
-        # ====================================================
-
-        if (
-            len(self.sequence_buffer)
-            >= SEQUENCE_LENGTH
-        ):
-
-            if self.prediction_countdown <= 0:
-
-                sequence = np.array(
-                    self.sequence_buffer,
-                    dtype=np.float32,
-                )
-
-                sequence = resample_sequence(
-                    sequence,
-                    SEQUENCE_LENGTH,
-                )
-
-                X = np.expand_dims(
-                    sequence,
-                    axis=0,
-                )
-
-                try:
-
-                    probabilities = (
-                        self.model.predict(
-                            X,
-                            verbose=0,
-                        )[0]
-                    )
-
-                    predicted_id = int(
-                        np.argmax(
-                            probabilities
-                        )
-                    )
-
-                    confidence = float(
-                        probabilities[
-                            predicted_id
-                        ]
-                    )
-
-                    predicted_label = (
-                        self.id_to_label.get(
-                            predicted_id,
-                            "UNKNOWN",
-                        )
-                    )
-
-                    # ----------------------------------------
-                    # Top 3
-                    # ----------------------------------------
-
-                    top_indices = (
-                        np.argsort(
-                            probabilities
-                        )[::-1][:3]
-                    )
-
-                    top_predictions = []
-
-                    for idx in top_indices:
-
-                        top_predictions.append(
-                            (
-                                self.id_to_label.get(
-                                    int(idx),
-                                    "UNKNOWN",
-                                ),
-                                float(
-                                    probabilities[idx]
-                                ),
-                            )
-                        )
-
-                    # ----------------------------------------
-                    # Save prediction
-                    # ----------------------------------------
-
-                    with self.lock:
-
-                        self.prediction = (
-                            predicted_label
-                        )
-
-                        self.confidence = (
-                            confidence
-                        )
-
-                        self.top_predictions = (
-                            top_predictions
-                        )
-
-                        # ------------------------------------
-                        # Phrase builder
-                        # ------------------------------------
-
-                        self.add_to_phrase(
-                            predicted_label,
-                            confidence,
-                        )
-
-                    # Predict periodically
-                    self.prediction_countdown = 12
-
-                except Exception:
-
-                    pass
-
-            else:
-
-                self.prediction_countdown -= 1
-
-        # ====================================================
-        # CLEAR BUFFER AFTER HAND DISAPPEARS
-        # ====================================================
-
-        if self.no_hand_frames >= 15:
-
-            self.sequence_buffer.clear()
-
-            self.prediction_countdown = 0
-
-            self.stable_label = None
-
-            self.stable_count = 0
-
-        # ====================================================
-        # GET CURRENT STATE
-        # ====================================================
-
-        with self.lock:
-
-            prediction = self.prediction
-
-            confidence = self.confidence
-
-            total_frames = self.total_frames
-
-            active_frames = self.active_frames
-
-            sequence_count = len(
-                self.sequence_buffer
-            )
-
-            phrase_text = " ".join(
-                self.phrase
-            )
-
-        # ====================================================
-        # DRAW VIDEO UI
-        # ====================================================
-
-        # Header
-        cv2.rectangle(
-            img,
-            (0, 0),
-            (img.shape[1], 115),
-            (0, 0, 0),
-            -1,
-        )
-
-        cv2.putText(
-            img,
-            "ASL Sign Language AI",
-            (15, 30),
-            cv2.FONT_HERSHEY_SIMPLEX,
-            0.8,
-            (255, 255, 255),
-            2,
-        )
-
-        # Prediction
-        cv2.putText(
-            img,
-            f"Sign: {prediction}",
-            (15, 62),
-            cv2.FONT_HERSHEY_SIMPLEX,
-            0.75,
-            (0, 255, 0),
-            2,
-        )
-
-        # Confidence
-        cv2.putText(
-            img,
-            f"Confidence: {confidence * 100:.1f}%",
-            (15, 92),
-            cv2.FONT_HERSHEY_SIMPLEX,
-            0.65,
-            (255, 255, 255),
-            2,
-        )
-
-        # ----------------------------------------------------
-        # Phrase on video
-        # ----------------------------------------------------
-
-        if phrase_text:
-
-            display_phrase = phrase_text
-
-            # Keep display from becoming too wide.
-            if len(display_phrase) > 55:
-
-                display_phrase = (
-                    "..." + display_phrase[-52:]
-                )
-
-            cv2.putText(
-                img,
-                f"Phrase: {display_phrase}",
-                (15, img.shape[0] - 42),
-                cv2.FONT_HERSHEY_SIMPLEX,
-                0.55,
-                (0, 255, 255),
-                2,
-            )
-
-        # ----------------------------------------------------
-        # Diagnostics
-        # ----------------------------------------------------
-
-        bottom_text = (
-            f"Hand: "
-            f"{'Detected' if found_hand else 'Not detected'}"
-            f" | Active: {active_frames}"
-            f" | Sequence: "
-            f"{sequence_count}/{SEQUENCE_LENGTH}"
-        )
-
-        cv2.putText(
-            img,
-            bottom_text,
-            (15, img.shape[0] - 15),
-            cv2.FONT_HERSHEY_SIMPLEX,
-            0.48,
-            (255, 255, 255),
-            2,
-        )
-
-        # ====================================================
-        # RETURN FRAME
-        # ====================================================
-
-        return av.VideoFrame.from_ndarray(
-            img,
-            format="bgr24",
-        )
-
-
-# ============================================================
-# VIDEO ANALYSIS
+# ANALYZE VIDEO
 # ============================================================
 
 def analyze_video(
@@ -835,105 +325,103 @@ def analyze_video(
             "message": "Could not open video.",
         }
 
-    total_frames = int(
-        cap.get(
-            cv2.CAP_PROP_FRAME_COUNT
-        )
-    )
+    try:
 
-    fps = cap.get(
-        cv2.CAP_PROP_FPS
-    )
-
-    if fps <= 0:
-        fps = 30
-
-    # --------------------------------------------------------
-    # Limit processing
-    # --------------------------------------------------------
-
-    max_frames = 120
-
-    if total_frames > max_frames:
-
-        frame_indices = np.linspace(
-            0,
-            total_frames - 1,
-            max_frames,
-        ).astype(int)
-
-        frame_indices = set(
-            frame_indices.tolist()
+        total_frames = int(
+            cap.get(
+                cv2.CAP_PROP_FRAME_COUNT
+            )
         )
 
-    else:
+        fps = cap.get(
+            cv2.CAP_PROP_FPS
+        )
 
-        frame_indices = None
-
-    active_features = []
-
-    processed_frames = 0
-    active_frames = 0
-
-    frame_number = 0
-
-    while True:
-
-        ret, frame = cap.read()
-
-        if not ret:
-            break
-
-        if (
-            frame_indices is not None
-            and frame_number not in frame_indices
-        ):
-
-            frame_number += 1
-            continue
-
-        processed_frames += 1
+        if fps <= 0:
+            fps = 30
 
         # ----------------------------------------------------
-        # BGR -> RGB
+        # Limit processing to a maximum of 120 frames
         # ----------------------------------------------------
 
-        rgb = cv2.cvtColor(
-            frame,
-            cv2.COLOR_BGR2RGB,
-        )
+        if total_frames > MAX_VIDEO_FRAMES:
 
-        mp_image = mp.Image(
-            image_format=mp.ImageFormat.SRGB,
-            data=rgb,
-        )
-
-        # ----------------------------------------------------
-        # MediaPipe
-        # ----------------------------------------------------
-
-        result = landmarker.detect(
-            mp_image
-        )
-
-        features, found_hand = (
-            extract_features(result)
-        )
-
-        if found_hand:
-
-            active_features.append(
-                features
+            frame_indices = set(
+                np.linspace(
+                    0,
+                    total_frames - 1,
+                    MAX_VIDEO_FRAMES,
+                ).astype(int).tolist()
             )
 
-            active_frames += 1
+        else:
 
-        frame_number += 1
+            frame_indices = None
 
-    cap.release()
+        active_features = []
+
+        processed_frames = 0
+        active_frames = 0
+
+        frame_number = 0
+
+        # ----------------------------------------------------
+        # Process video frames
+        # ----------------------------------------------------
+
+        while True:
+
+            ret, frame = cap.read()
+
+            if not ret:
+                break
+
+            if (
+                frame_indices is not None
+                and frame_number not in frame_indices
+            ):
+
+                frame_number += 1
+                continue
+
+            processed_frames += 1
+
+            # BGR to RGB
+            rgb = cv2.cvtColor(
+                frame,
+                cv2.COLOR_BGR2RGB,
+            )
+
+            mp_image = mp.Image(
+                image_format=mp.ImageFormat.SRGB,
+                data=rgb,
+            )
+
+            # MediaPipe detection
+            result = landmarker.detect(
+                mp_image
+            )
+
+            features, found_hand = (
+                extract_features(result)
+            )
+
+            if found_hand:
+
+                active_features.append(
+                    features
+                )
+
+                active_frames += 1
+
+            frame_number += 1
+
+    finally:
+
+        cap.release()
 
     # --------------------------------------------------------
-    # No hands
+    # No hands detected
     # --------------------------------------------------------
 
     if active_frames == 0:
@@ -1002,7 +490,7 @@ def analyze_video(
     )
 
     # --------------------------------------------------------
-    # Top 3
+    # Top 3 predictions
     # --------------------------------------------------------
 
     top_indices = np.argsort(
@@ -1038,7 +526,7 @@ def analyze_video(
 
 
 # ============================================================
-# MAIN
+# MAIN APPLICATION
 # ============================================================
 
 st.title(
@@ -1119,11 +607,11 @@ with st.sidebar:
     )
 
     st.write(
-        "**Features:** 126"
+        f"**Features:** {FEATURES}"
     )
 
     st.write(
-        "**Phrase threshold:** 80%"
+        "**Recognition:** Uploaded video"
     )
 
     st.divider()
@@ -1137,182 +625,28 @@ with st.sidebar:
     ):
 
         st.write(
-            f"{i + 1}. "
-            f"{id_to_label[i]}"
+            f"{i + 1}. {id_to_label[i]}"
         )
 
 
 # ============================================================
-# REAL-TIME WEBCAM
+# APPLICATION INFORMATION
 # ============================================================
 
 st.subheader(
-    "📷 Real-Time ASL Recognition"
+    "📹 ASL Sign Recognition"
 )
 
 st.info(
-    "Click START and allow browser camera access."
+    "Upload a video showing a clearly visible ASL sign. "
+    "The system will extract hand landmarks and predict "
+    "the most likely sign."
 )
 
-ctx = webrtc_streamer(
-
-    key="asl-live-camera",
-
-    video_processor_factory=(
-        ASLVideoProcessor
-    ),
-
-    rtc_configuration=(
-        RTC_CONFIGURATION
-    ),
-
-    media_stream_constraints={
-        "video": True,
-        "audio": False,
-    },
-
-    async_processing=True,
+st.caption(
+    "Live webcam recognition is temporarily unavailable "
+    "in this deployment while compatibility is being tested."
 )
-
-
-# ============================================================
-# LIVE INFORMATION
-# ============================================================
-
-if ctx.video_processor:
-
-    processor = ctx.video_processor
-
-    with processor.lock:
-
-        current_prediction = (
-            processor.prediction
-        )
-
-        current_confidence = (
-            processor.confidence
-        )
-
-        current_active = (
-            processor.active_frames
-        )
-
-        current_sequence = len(
-            processor.sequence_buffer
-        )
-
-        current_top = list(
-            processor.top_predictions
-        )
-
-        current_phrase = list(
-            processor.phrase
-        )
-
-    # --------------------------------------------------------
-    # Metrics
-    # --------------------------------------------------------
-
-    col1, col2, col3, col4 = st.columns(4)
-
-    with col1:
-
-        st.metric(
-            "Sign",
-            current_prediction,
-        )
-
-    with col2:
-
-        st.metric(
-            "Confidence",
-            f"{current_confidence * 100:.1f}%",
-        )
-
-    with col3:
-
-        st.metric(
-            "Active Frames",
-            current_active,
-        )
-
-    with col4:
-
-        st.metric(
-            "Sequence",
-            f"{current_sequence}/30",
-        )
-
-    # ========================================================
-    # PHRASE
-    # ========================================================
-
-    st.divider()
-
-    st.subheader(
-        "📝 Recognized Phrase"
-    )
-
-    if current_phrase:
-
-        st.markdown(
-            "### "
-            + " ".join(
-                current_phrase
-            )
-        )
-
-    else:
-
-        st.info(
-            "No signs added to the phrase yet."
-        )
-
-    # --------------------------------------------------------
-    # Clear phrase
-    # --------------------------------------------------------
-
-    if st.button(
-        "🗑️ Clear Phrase",
-        key="clear_phrase",
-    ):
-
-        with processor.lock:
-
-            processor.phrase.clear()
-
-            processor.last_added_sign = None
-
-            processor.last_added_time = 0.0
-
-            processor.stable_label = None
-
-            processor.stable_count = 0
-
-        st.rerun()
-
-    # ========================================================
-    # TOP PREDICTIONS
-    # ========================================================
-
-    if current_top:
-
-        st.divider()
-
-        st.subheader(
-            "🔎 Latest Top Predictions"
-        )
-
-        for label, confidence in current_top:
-
-            st.write(
-                f"**{label}** — "
-                f"{confidence * 100:.2f}%"
-            )
-
-            st.progress(
-                confidence
-            )
 
 
 # ============================================================
@@ -1326,28 +660,43 @@ st.subheader(
 )
 
 uploaded_file = st.file_uploader(
-    "Upload an MP4 video",
+    "Upload an ASL video",
     type=[
         "mp4",
         "avi",
         "mov",
         "mkv",
     ],
+    key="asl_video_upload",
 )
 
 
 if uploaded_file is not None:
 
-    temp_dir = PROJECT_DIR / "outputs"
+    # --------------------------------------------------------
+    # Save uploaded video
+    # --------------------------------------------------------
+
+    temp_dir = (
+        PROJECT_DIR
+        / "outputs"
+    )
 
     temp_dir.mkdir(
         parents=True,
         exist_ok=True,
     )
 
+    file_extension = (
+        Path(uploaded_file.name).suffix.lower()
+    )
+
+    if not file_extension:
+        file_extension = ".mp4"
+
     temp_video = (
         temp_dir
-        / "uploaded_video.mp4"
+        / f"uploaded_video{file_extension}"
     )
 
     with open(
@@ -1371,8 +720,12 @@ if uploaded_file is not None:
         f"**File:** {uploaded_file.name}"
     )
 
+    st.write(
+        f"**Size:** {uploaded_file.size / (1024 * 1024):.2f} MB"
+    )
+
     # --------------------------------------------------------
-    # Analyze
+    # Analyze button
     # --------------------------------------------------------
 
     if st.button(
@@ -1381,26 +734,46 @@ if uploaded_file is not None:
         key="analyze_uploaded_video",
     ):
 
-        with st.spinner(
-            "Analyzing video..."
-        ):
+        upload_landmarker = None
 
-            upload_landmarker = (
-                create_landmarker()
+        try:
+
+            with st.spinner(
+                "Analyzing video and extracting hand landmarks..."
+            ):
+
+                upload_landmarker = (
+                    create_landmarker()
+                )
+
+                result = analyze_video(
+                    temp_video,
+                    upload_landmarker,
+                    model,
+                    id_to_label,
+                )
+
+        except Exception as e:
+
+            st.error(
+                "An error occurred while analyzing the video."
             )
 
-            result = analyze_video(
-                temp_video,
-                upload_landmarker,
-                model,
-                id_to_label,
-            )
+            st.exception(e)
+
+            result = None
+
+        finally:
+
+            if upload_landmarker is not None:
+
+                upload_landmarker.close()
 
         # ----------------------------------------------------
-        # Failed
+        # Failed analysis
         # ----------------------------------------------------
 
-        if not result["success"]:
+        if result is not None and not result["success"]:
 
             st.error(
                 result["message"]
@@ -1408,19 +781,19 @@ if uploaded_file is not None:
 
             st.warning(
                 f"""
-Frames: {result.get("total_frames", 0)}
+Total frames: {result.get("total_frames", 0)}
 
-Processed: {result.get("processed_frames", 0)}
+Processed frames: {result.get("processed_frames", 0)}
 
 Active hand frames: {result.get("active_frames", 0)}
 """
             )
 
         # ----------------------------------------------------
-        # Successful
+        # Successful prediction
         # ----------------------------------------------------
 
-        else:
+        elif result is not None:
 
             st.success(
                 "✅ Prediction completed."
@@ -1432,10 +805,13 @@ Active hand frames: {result.get("active_frames", 0)}
                 f"""
 # 🤟 {result["label"]}
 
-### Confidence:
-
-{result["confidence"] * 100:.2f}%
+### Model confidence: {result["confidence"] * 100:.2f}%
 """
+            )
+
+            st.caption(
+                "Confidence is the model's predicted probability "
+                "for this input, not a guarantee of correctness."
             )
 
             # ------------------------------------------------
@@ -1466,8 +842,10 @@ Active hand frames: {result.get("active_frames", 0)}
                 )
 
             # ------------------------------------------------
-            # Top 3
+            # Top 3 predictions
             # ------------------------------------------------
+
+            st.divider()
 
             st.subheader(
                 "🔎 Top Predictions"
@@ -1495,7 +873,7 @@ Active hand frames: {result.get("active_frames", 0)}
                 )
 
             # ------------------------------------------------
-            # Diagnostics
+            # Detection diagnostics
             # ------------------------------------------------
 
             st.divider()
@@ -1520,16 +898,16 @@ Active hand frames: {result.get("active_frames", 0)}
             if active_ratio < 10:
 
                 st.warning(
-                    "Very few frames contain "
-                    "detected hands."
+                    "Very few frames contain detected hands. "
+                    "Try improving the lighting and keeping "
+                    "your hands clearly visible."
                 )
 
             elif active_ratio < 25:
 
                 st.info(
-                    "Some hand frames were "
-                    "detected, but detection "
-                    "was intermittent."
+                    "Some hand frames were detected, but "
+                    "detection was intermittent."
                 )
 
             else:
